@@ -1,0 +1,84 @@
+.boxContainer {
+	aspect-ratio: 1/1;
+	width: 350px;
+	border-radius: 25px;
+	position: relative;
+	transition: 100ms ease-out;
+	//overflow: hidden;
+
+	//a virer
+	margin: auto;
+	margin-top: 100px;
+
+	.rollText {
+		//width: 350px;
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		translate: -50% 50%;
+		font-size: 50px;
+		color: white;
+		z-index: 10;
+	}
+
+	&:hover {
+		width: 380px;
+
+		.rollText {
+			padding-left: 200%;
+			white-space: nowrap;
+			display: flex;
+			gap: 190px;
+
+			b:first-child {
+				animation: defilement 2s infinite linear;
+			}
+
+			b:last-child {
+				background-color: red;
+				animation: defilement 2s infinite linear;
+			}
+
+		}
+
+		img {
+			animation: bounceImage 200ms linear;
+			width: 105%;
+			height: 105%;
+			bottom: 2.5%;
+		}
+	}
+}
+
+@keyframes defilement {
+	0% {
+		translate: 0 0 0;
+	}
+
+	100% {
+		translate: -300% 0 0;
+	}
+}
+
+@keyframes defilement2 {
+	0% {
+		translate: 0 0 0;
+	}
+
+	100% {
+		translate: -300 0 0;
+	}
+}
+
+@keyframes bounceImage {
+	0% {
+		width: 100%;
+		height: 100%;
+	}
+
+	90% {
+		width: 107%;
+		height: 107%;
+	}
+}
