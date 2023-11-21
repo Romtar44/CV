@@ -1,0 +1,60 @@
+.rollingText {
+	display: flex;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: $MarqueeFontSize;
+	left: 0;
+	top: 50%;
+	translate: 0 -50%;
+	align-items: center;
+}
+
+.rollingText div {
+	position: absolute;
+	min-width: 100%;
+}
+
+.rollingText div span,
+.rollingText div:after {
+	position: relative;
+	display: inline-block;
+	font-family: 'PoppinsRoll';
+	font-size: $MarqueeFontSize;
+	white-space: nowrap;
+	top: 0;
+}
+
+.rollingText div span {
+	animation: defilement $MarqueeAnimTime infinite linear;
+}
+
+.rollingText div:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: attr(data-text);
+	animation: defilement2 $MarqueeAnimTime infinite linear;
+}
+
+@keyframes defilement {
+	0% {
+		margin-left: 5%;
+	}
+
+	100% {
+		margin-left: -100%;
+	}
+}
+
+@keyframes defilement2 {
+	0% {
+		margin-left: 100%;
+	}
+
+	100% {
+		margin-left: 5%;
+	}
+}

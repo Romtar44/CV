@@ -1,73 +1,31 @@
 .boxContainer {
 	aspect-ratio: 1/1;
-	width: 350px;
-	border-radius: 25px;
+	width: $BoxSize;
+	border-radius: $BoxBorderRadius;
 	position: relative;
-	transition: 100ms ease-out;
-	//overflow: hidden;
+	transition: $BoxTransitionTime ease-out;
 
-	//a virer
-	margin: auto;
-	margin-top: 100px;
 
-	.rollText {
-		//width: 350px;
+	margin: 100px auto;
+
+	.marquee {
 		display: none;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		translate: -50% 50%;
-		font-size: 50px;
-		color: white;
-		z-index: 10;
 	}
 
 	&:hover {
-		width: 380px;
+		width: $BoxSizeFocus;
+		height: $BoxSizeFocus;
 
-		.rollText {
-			padding-left: 200%;
-			white-space: nowrap;
-			display: flex;
-			gap: 190px;
-
-			b:first-child {
-				animation: defilement 2s infinite linear;
-			}
-
-			b:last-child {
-				background-color: red;
-				animation: defilement 2s infinite linear;
-			}
-
+		.marquee {
+			display: block;
 		}
 
 		img {
-			animation: bounceImage 200ms linear;
-			width: 105%;
-			height: 105%;
-			bottom: 2.5%;
+			animation: bounceImage $BounceAnimTime linear;
+			width: $BoxImageSize;
+			height: $BoxImageSize;
+			bottom: calc(calc($BoxImageSize - 100%) / 2);
 		}
-	}
-}
-
-@keyframes defilement {
-	0% {
-		translate: 0 0 0;
-	}
-
-	100% {
-		translate: -300% 0 0;
-	}
-}
-
-@keyframes defilement2 {
-	0% {
-		translate: 0 0 0;
-	}
-
-	100% {
-		translate: -300 0 0;
 	}
 }
 
@@ -78,7 +36,7 @@
 	}
 
 	90% {
-		width: 107%;
-		height: 107%;
+		width: $BoxBounce;
+		height: $BoxBounce;
 	}
 }

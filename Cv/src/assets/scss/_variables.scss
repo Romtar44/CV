@@ -1,2 +1,22 @@
 $headercolor: #751B44;
 $bordercolor: #262626;
+
+
+
+$BoxSize: 350px;
+$BoxSizeFocus: 380px;
+$BoxBorderRadius: 25px;
+$BoxBounce: 107%;
+$BoxImageSize: 105%;
+
+
+$BoxTransitionTime: 100ms;
+$BounceAnimTime: 200ms;
+$MarqueeAnimTime: 5s;
+
+$MarqueeFontSize: 4rem;
+
+@font-face {
+	font-family: PoppinsRoll;
+	src: url(/assets/fonts/Poppins/Poppins-Thin.ttf);
+}
