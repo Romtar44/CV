@@ -1,0 +1,21 @@
+.titleContainer {
+	width: 100%;
+	position: absolute;
+	padding-left: $BoxBorderRadius;
+	padding-right: $BoxBorderRadius;
+	justify-content: center;
+	flex-direction: column;
+	display: flex;
+	gap: 5px;
+
+	h3 {
+		font-size: 2.5rem;
+	}
+
+	i {
+		font-size: 1.3rem;
+		font-weight: 800;
+
+		position: relative;
+	}
+}

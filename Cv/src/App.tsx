@@ -3,7 +3,6 @@ import { MainBox } from './components/mainBox/mainbox'
 
 function App()
 {
-
 	return (
 		<div className={styles.main}>
 			<MainBox />

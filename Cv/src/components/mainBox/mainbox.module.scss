@@ -1,15 +1,31 @@
 .boxContainer {
-	aspect-ratio: 1/1;
 	width: $BoxSize;
+	height: $BoxSize;
 	border-radius: $BoxBorderRadius;
 	position: relative;
 	transition: $BoxTransitionTime ease-out;
+	overflow: hidden;
+	cursor: pointer;
 
-
-	margin: 100px auto;
+	//margin: 100px auto;
+	.title {
+		padding-left: $BoxBorderRadius;
+		top: 83%;
+		position: absolute;
+		width: 500px;
+		height: 1.8rem;
+		font-size: 1.8rem;
+		animation: reverseBounceTitle 200ms linear;
+	}
 
 	.marquee {
 		display: none;
+	}
+
+	.boxTitleContainer {
+		position: absolute;
+		top: 100%;
+		animation: reverseTitle 250ms ease-in-out;
 	}
 
 	&:hover {
@@ -20,12 +36,59 @@
 			display: block;
 		}
 
+		.title {
+			display: none;
+		}
+
+		.boxTitleContainer {
+			width: 100%;
+			position: absolute;
+			animation: bounceTitle 250ms linear;
+			top: 80%;
+		}
+
 		img {
 			animation: bounceImage $BounceAnimTime linear;
-			width: $BoxImageSize;
-			height: $BoxImageSize;
-			bottom: calc(calc($BoxImageSize - 100%) / 2);
+			width: $BoxImageSizeExtend;
+			height: $BoxImageSizeExtend;
+			bottom: calc(calc($BoxImageSizeExtend - 100%) / 2);
 		}
+	}
+}
+
+@keyframes reverseTitle {
+	0% {
+		top: 80%;
+	}
+
+	100% {
+		top: 100%;
+	}
+}
+
+@keyframes bounceTitle {
+	0% {
+		top: 100%;
+	}
+
+	90% {
+		top: 75%;
+	}
+}
+
+@keyframes reverseBounceTitle {
+	0% {
+		opacity: 0;
+		top: 75%;
+	}
+
+	50% {
+		opacity: 1;
+		top: 75%;
+	}
+
+	90% {
+		top: 85%;
 	}
 }
 
