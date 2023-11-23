@@ -1,10 +1,8 @@
-import styles from "./image.module.scss"
-
 type ImageProps = {
 	imgSrc: string,
 	alt: string,
 	w?: string,
-	h?: string
+	h?: string,
 	className?: string
 }
 
@@ -17,8 +15,8 @@ const Image = ({
 }: ImageProps) =>
 {
 	return (
-		<div className={`${styles.imgContainer} ${className}`} style={{ width: w, height: h }}>
-			<img src={imgSrc} alt={alt} />
+		<div className={className} style={{ width: w, height: h }}>
+			<img src={imgSrc} alt={alt} style={{}} />
 		</div>)
 }
 

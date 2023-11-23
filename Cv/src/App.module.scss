@@ -14,11 +14,25 @@ html,
 	}
 }
 
-.main {
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
+.mainContainer {
+	margin: auto;
+	width: 2200px;
+	//height: 269vh;
+	height: 300vh;
 	background-color: black;
+	overflow: hidden;
 	z-index: -1;
+
+	.container {
+		display: flex;
+		justify-content: center;
+
+		.column {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			//gap: 50px;
+			margin-top: calc($BoxSize / 1.5 * -1);
+		}
+	}
 }

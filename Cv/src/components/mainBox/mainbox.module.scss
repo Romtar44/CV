@@ -1,3 +1,10 @@
+.container {
+	display: flex;
+	justify-content: center;
+	width: calc($BoxSize * 1.15);
+	height: calc($BoxSize * 1.15);
+}
+
 .boxContainer {
 	width: $BoxSize;
 	height: $BoxSize;
@@ -6,16 +13,24 @@
 	transition: $BoxTransitionTime ease-out;
 	overflow: hidden;
 	cursor: pointer;
+	margin: auto;
 
-	//margin: 100px auto;
 	.title {
 		padding-left: $BoxBorderRadius;
 		top: 83%;
 		position: absolute;
 		width: 500px;
-		height: 1.8rem;
-		font-size: 1.8rem;
+		height: 1.9rem;
+		font-size: 1.9rem;
 		animation: reverseBounceTitle 200ms linear;
+		color: white;
+	}
+
+	.mainImgContainer {
+		overflow: hidden;
+		display: flex;
+		border: 1px solid $bordercolor;
+		border-radius: 25px;
 	}
 
 	.marquee {
@@ -23,9 +38,17 @@
 	}
 
 	.boxTitleContainer {
+		display: flex;
+		width: 100%;
+		height: 5rem;
 		position: absolute;
 		top: 100%;
-		animation: reverseTitle 250ms ease-in-out;
+		animation: reverseTitle $TitleBounceTime ease-in-out;
+
+		.arrow {
+			position: absolute;
+			top: 200%;
+		}
 	}
 
 	&:hover {
@@ -41,18 +64,78 @@
 		}
 
 		.boxTitleContainer {
-			width: 100%;
-			position: absolute;
-			animation: bounceTitle 250ms linear;
+			animation: bounceTitle $TitleBounceTime linear;
 			top: 80%;
+
+			.arrow {
+				display: flex;
+				rotate: 230deg;
+				transition: rotate 400ms linear;
+				border: 2px solid white;
+				border-radius: 50%;
+				right: 7%;
+				top: 50%;
+				translate: 0 -50%;
+			}
 		}
 
-		img {
-			animation: bounceImage $BounceAnimTime linear;
-			width: $BoxImageSizeExtend;
-			height: $BoxImageSizeExtend;
+		.mainImgContainer {
+			position: relative;
+			width: $BoxImageSizeExtend !important;
+			height: $BoxImageSizeExtend !important;
+			object-position: center center;
 			bottom: calc(calc($BoxImageSizeExtend - 100%) / 2);
+			right: calc(calc($BoxImageSizeExtend - 100%) / 2);
+
+
+			img {
+				animation: bounceImage $BounceAnimTime linear;
+				position: relative;
+				//bottom: calc(calc($BoxImageSizeExtend - 100%) / 2);
+			}
 		}
+	}
+}
+
+@media screen and (max-width: $MobileBreakpoint) {
+	.boxContainer {
+		transition: none;
+
+		&:hover {
+			width: $BoxSize;
+			height: $BoxSize;
+
+			.title {
+				animation: none;
+			}
+
+			.mainImgContainer {
+				animation: none;
+				width: 100%;
+				height: 100%;
+			}
+
+			.marquee {
+				display: none;
+			}
+		}
+	}
+
+	.boxTitleContainer {
+		top: 80% !important;
+		animation: none;
+		display: flex;
+	}
+
+	.arrow {
+		display: flex;
+		rotate: 230deg;
+		position: absolute;
+		border: 2px solid white;
+		border-radius: 50%;
+		right: 7%;
+		top: 50%;
+		translate: 0 -50%;
 	}
 }
 
@@ -94,12 +177,17 @@
 
 @keyframes bounceImage {
 	0% {
-		width: 100%;
+		width: 100% !important;
 		height: 100%;
 	}
 
-	90% {
-		width: $BoxBounce;
+	85% {
+		width: $BoxBounce !important;
 		height: $BoxBounce;
+	}
+
+	100% {
+		width: $BoxImageSizeExtend !important;
+		height: $BoxImageSizeExtend;
 	}
 }

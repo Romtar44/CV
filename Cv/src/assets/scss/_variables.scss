@@ -3,18 +3,20 @@ $bordercolor: #262626;
 
 
 
-$BoxSize: 350px;
-$BoxSizeFocus: 380px;
+$BoxSize: 480px;
+$BoxSizeFocus: 528px;
 $BoxBorderRadius: 25px;
-$BoxBounce: 107%;
+$BoxBounce: 105.1%;
 $BoxImageSizeExtend: 105%;
 $BoxImageSizeNarrow: 105%;
+$MobileBreakpoint: 1000px;
 
 
 
 $BoxTransitionTime: 100ms;
 $BounceAnimTime: 200ms;
 $MarqueeAnimTime: 5s;
+$TitleBounceTime: 250ms;
 
 $MarqueeFontSize: 4rem;
 

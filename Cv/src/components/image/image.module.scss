@@ -1,14 +1,8 @@
-.imgContainer {
-	overflow: hidden;
-	display: flex;
-	border: 1px solid $bordercolor;
-	border-radius: 25px;
-
-	img {
-		position: relative;
-		margin: auto;
-		object-fit: cover;
-		width: 100%;
-		height: 100%;
-	}
+img {
+	position: relative;
+	margin: auto;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-position: center center;
 }
