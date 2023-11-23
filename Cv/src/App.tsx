@@ -3,21 +3,20 @@ import { MainBox } from './components/mainBox/mainbox'
 import Pp from './assets/rtournet.jpg'
 import { useEffect } from 'react'
 
+2200 / (2200 - window.innerWidth)
+
 function App()
 {
 
 	const mouseMoveFunction = (event: any) =>
 	{
-		if (event.clientX > 10)
-		{
-			window.scroll({ top: 0, left: event.clientX, behavior: 'smooth' })
-			console.log(event.clientX, window.scrollX)
-		}
+		window.scroll({ top: 0, left: (event.clientX - (window.innerWidth / 2)) / (2200 / (2200 - window.innerWidth)), behavior: 'smooth' })
 	}
 
 
 	useEffect(() =>
 	{
+		window.scroll(window.innerWidth, 0)
 		window.addEventListener('mousemove', mouseMoveFunction)
 		return (() => window.removeEventListener('mousemove', mouseMoveFunction))
 	}, [])
