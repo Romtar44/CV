@@ -52,8 +52,7 @@
 	}
 
 	&:hover {
-		width: $BoxSizeFocus;
-		height: $BoxSizeFocus;
+		transform: scale(1.05);
 
 		.marquee {
 			display: block;
@@ -87,11 +86,9 @@
 			bottom: calc(calc($BoxImageSizeExtend - 100%) / 2);
 			right: calc(calc($BoxImageSizeExtend - 100%) / 2);
 
-
 			img {
 				animation: bounceImage $BounceAnimTime linear;
 				position: relative;
-				//bottom: calc(calc($BoxImageSizeExtend - 100%) / 2);
 			}
 		}
 	}

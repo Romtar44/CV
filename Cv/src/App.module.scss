@@ -12,6 +12,8 @@ html,
 		padding: 0px;
 		margin: 0px;
 	}
+
+	scrollbar-color: red green;
 }
 
 .mainContainer {
@@ -23,10 +25,12 @@ html,
 	overflow: hidden;
 	z-index: -1;
 
+
 	.container {
 		display: flex;
 		justify-content: center;
 		width: 100%;
+		position: relative;
 
 		.column {
 			position: relative;
