@@ -1,6 +1,6 @@
 html,
 :root {
-	font-size: 62.5%;
+	font-size: 2.06vw;
 	width: 100vw;
 	height: 100vh;
 	max-width: 100%;
@@ -13,18 +13,35 @@ html,
 		margin: 0px;
 	}
 
-	scrollbar-color: red green;
+	*::-webkit-scrollbar {
+		width: 0px;
+		height: 0px;
+		appearance: none;
+		color: transparent;
+	}
+
+	scrollbar-width: 0px;
+	scrollbar-color: transparent transparent;
+}
+
+@mixin align-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	width: calc($BoxSize * 1.15 * 4);
 }
 
 .mainContainer {
 	margin: auto;
-	width: 2200px;
-	//height: 269vh;
-	height: 300vh;
-	background-color: black;
+	width: 100%;
+	height: 310vh;
 	overflow: hidden;
-	z-index: -1;
 
+	background-color: black;
+	z-index: -1;
 
 	.container {
 		display: flex;

@@ -3,8 +3,8 @@ $bordercolor: #262626;
 
 
 
-$BoxSize: 480px;
-$BoxSizeFocus: 528px;
+$BoxSize: 12.14em;
+$BoxSizeFocus: calc($BoxSize * 1.1);
 $BoxBorderRadius: 25px;
 $BoxBounce: 105.1%;
 $BoxImageSizeExtend: 105%;
