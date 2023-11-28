@@ -4,17 +4,21 @@ import Pp from './assets/rtournet.jpg'
 import { useEffect, useState } from 'react'
 import { useMediaQuery } from '@chakra-ui/react'
 
+
 function App()
 {
+	//const { DesktopBreakpoint } = variables
 	const [offsetY, setOffsetY] = useState(0)
-	const [mobileMode] = useMediaQuery('(max-width: 1000px)')
-
+	const [mediumMode, smallMode] = useMediaQuery([
+		`(max-width: 1000px)`,
+		'(max-width: 800px)',
+	])
+	//const [smallMode] = useMediaQuery('(max-width: $MediumBreakpoint)')
 
 
 	const mouseMoveFunction = (event: any) =>
 	{
 		window.scroll({ left: event.pageX / (document.body.clientWidth / (document.body.clientWidth - screen.width)), behavior: 'instant' })
-		console.log(event.pageX)
 	}
 
 	const handleScroll = () =>
@@ -37,82 +41,100 @@ function App()
 	}, [])
 
 	return (
-		!mobileMode ?
-			<div className={styles.mainContainer} id='main'>
+		<>
+			{
+				!mediumMode &&
+				<div className={styles.mainContainer} id='main'>
 
-				<div className={styles.container}>
+					<div className={styles.container}>
 
-					<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }} >
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+						</div>
+
+						<div className={styles.longColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+						</div>
+
+						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+						</div>
+
+						<div className={styles.longColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+						</div>
+
+						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+						</div>
 					</div>
+				</div >
+			}
+			{
+				mediumMode &&
+				<div className={styles.mainContainer} id='main'>
 
-					<div className={styles.longColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+					<div className={styles.container}>
+
+						<div className={styles.longColumn + " " + styles.column} style={smallMode ? {} : { transform: `translateY(${offsetY * 0.5}px)` }}>
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+						</div>
+
+						<div className={styles.shortColumn + " " + styles.column} style={smallMode ? {} : { transform: `translateY(${offsetY * 0.3}px)` }}>
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+						</div>
+
+						<div className={styles.longColumn + " " + styles.column} style={smallMode ? {} : { transform: `translateY(${offsetY * 0.5}px)` }}>
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+						</div>
 					</div>
-
-					<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-					</div>
-
-					<div className={styles.longColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-					</div>
-
-					<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-					</div>
-				</div>
-			</div >
-			:
-			<div className={styles.mainContainer} id='main'>
-
-				<div className={styles.container}>
-
-					<div className={styles.longColumn + " " + styles.column}>
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-					</div>
-
-					<div className={styles.shortColumn + " " + styles.column}>
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-					</div>
-
-					<div className={styles.longColumn + " " + styles.column}>
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-						<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-					</div>
-				</div>
-			</div >
+				</div >
+			}
+		</>
 	)
 }
 

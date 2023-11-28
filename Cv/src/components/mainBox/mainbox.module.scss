@@ -94,13 +94,20 @@
 	}
 }
 
-@media screen and (max-width: $MobileBreakpoint) {
+@media screen and (max-width: $DesktopBreakpoint) {
+	.container {
+		width: calc($MediumBoxSize * 1.15);
+		height: calc($MediumBoxSize * 1.15);
+	}
+
 	.boxContainer {
 		transition: none;
+		width: $MediumBoxSize;
+		height: $MediumBoxSize;
 
 		&:hover {
-			width: $BoxSize;
-			height: $BoxSize;
+			width: $MediumBoxSize;
+			height: $MediumBoxSize;
 
 			.title {
 				animation: none;
@@ -135,6 +142,44 @@
 		translate: 0 -50%;
 	}
 }
+
+@media screen and (max-width: $MediumBreakpoint) {
+	.container {
+		width: calc($SmallBoxSize * 1.15);
+		height: calc($SmallBoxSize * 1.15);
+	}
+
+	.boxContainer {
+		transition: none;
+		width: $SmallBoxSize;
+		height: $SmallBoxSize;
+
+		&:hover {
+			width: $SmallBoxSize;
+			height: $SmallBoxSize;
+		}
+	}
+}
+
+@media screen and (max-width: $SmallBreakpoint) {
+	.container {
+		width: calc($MobileBoxSize * 1.15);
+		height: calc($MobileBoxSize * 1.15);
+	}
+
+	.boxContainer {
+		transition: none;
+		width: $MobileBoxSize;
+		height: $MobileBoxSize;
+
+		&:hover {
+			width: $MobileBoxSize;
+			height: $MobileBoxSize;
+		}
+	}
+}
+
+
 
 @keyframes reverseTitle {
 	0% {

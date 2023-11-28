@@ -2,16 +2,37 @@ $headercolor: #751B44;
 $bordercolor: #262626;
 
 
+//Breakpoint
+$DesktopBreakpoint: 1000px;
+$MediumBreakpoint: 800px;
+$SmallBreakpoint: 500px;
+$MobileBreakpoint: 500px;
 
+
+//Desktop > 1000px
 $BoxSize: 12.14em;
 $BoxSizeFocus: calc($BoxSize * 1.1);
+//Medium > 800px
+$MediumBoxSize: 15.782em;
+$MediumBoxSizeFocus: calc($MediumBoxSize * 1.1);
+//Small > 500px
+$SmallBoxSize: 23.673em;
+$SmallBoxSizeFocus: calc($SmallBoxSize * 1.1);
+//Mobile < 500px
+$MobileBoxSize: 40em;
+$MobileBoxSizeFocus: calc($MobileBoxSize * 1.1);
+
 $BoxBorderRadius: 25px;
 $BoxBounce: 105.1%;
 $BoxImageSizeExtend: 105%;
 $BoxImageSizeNarrow: 105%;
-$MobileBreakpoint: 1000px;
 
-
+:export {
+	DesktopBreakpoint: $DesktopBreakpoint;
+	MediumBreakpoint: $MediumBreakpoint;
+	SmallBreakpoint: $SmallBreakpoint;
+	MobileBreakpoint: $MobileBreakpoint;
+}
 
 $BoxTransitionTime: 100ms;
 $BounceAnimTime: 200ms;

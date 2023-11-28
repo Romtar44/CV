@@ -37,24 +37,55 @@ body {
 .mainContainer {
 	margin: auto;
 	width: 100%;
-	height: 310vh;
+	//height: 100%;
+	//height: 5000px;
 	overflow: hidden;
 
 	background-color: black;
 	z-index: -1;
 
 	.container {
-		display: flex;
-		justify-content: center;
+		@include align-center;
+
 		width: 100%;
 		position: relative;
 
 		.column {
 			position: relative;
+			@include align-center;
 			display: flex;
 			flex-direction: column;
-			//gap: 50px;
-			margin-top: calc($BoxSize / 1.5 * -1);
+			margin-top: calc($BoxSize / -1.5);
 		}
+	}
+}
+
+@media screen and (max-width: $DesktopBreakpoint) {
+	body {
+		width: calc($MediumBoxSize * 1.15 * 3);
+	}
+
+	.column {
+		margin-top: calc($MediumBoxSize / 1.5 * -1);
+	}
+}
+
+@media screen and (max-width: $MediumBreakpoint) {
+	body {
+		width: calc($SmallBoxSize * 1.15 * 2);
+	}
+
+	.column {
+		margin-top: calc($SmallBoxSize / 1.5 * -1);
+	}
+}
+
+@media screen and (max-width: $SmallBreakpoint) {
+	body {
+		width: calc($MobileBoxSize * 1.15 * 1.5);
+	}
+
+	.column {
+		margin-top: calc($MobileBoxSize / 1.5 * -1);
 	}
 }
