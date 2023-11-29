@@ -80,8 +80,7 @@
 
 		.mainImgContainer {
 			position: relative;
-			width: $BoxImageSizeExtend !important;
-			height: $BoxImageSizeExtend !important;
+			transform: scale(1.05);
 			object-position: center center;
 			bottom: calc(calc($BoxImageSizeExtend - 100%) / 2);
 			right: calc(calc($BoxImageSizeExtend - 100%) / 2);
@@ -105,18 +104,23 @@
 		width: $MediumBoxSize;
 		height: $MediumBoxSize;
 
-		&:hover {
-			width: $MediumBoxSize;
-			height: $MediumBoxSize;
+		.title {
+			animation: none;
+		}
 
-			.title {
-				animation: none;
-			}
+		&:hover {
+			transform: scale(1);
+
 
 			.mainImgContainer {
 				animation: none;
-				width: 100%;
-				height: 100%;
+				transform: scale(1);
+				bottom: 0;
+				right: 0;
+
+				img {
+					animation: none;
+				}
 			}
 
 			.marquee {
@@ -129,18 +133,19 @@
 		top: 80% !important;
 		animation: none;
 		display: flex;
+
+		.staticArrow {
+			display: flex;
+			rotate: 230deg;
+			position: absolute;
+			border: 2px solid white;
+			border-radius: 50%;
+			right: 7%;
+			top: 50%;
+			translate: 0 -50%;
+		}
 	}
 
-	.arrow {
-		display: flex;
-		rotate: 230deg;
-		position: absolute;
-		border: 2px solid white;
-		border-radius: 50%;
-		right: 7%;
-		top: 50%;
-		translate: 0 -50%;
-	}
 }
 
 @media screen and (max-width: $MediumBreakpoint) {
@@ -163,8 +168,8 @@
 
 @media screen and (max-width: $SmallBreakpoint) {
 	.container {
-		width: calc($MobileBoxSize * 1.15);
-		height: calc($MobileBoxSize * 1.15);
+		width: calc($MobileBoxSize * 1.10);
+		height: calc($MobileBoxSize * 1.10);
 	}
 
 	.boxContainer {

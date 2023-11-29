@@ -7,13 +7,11 @@ import { useMediaQuery } from '@chakra-ui/react'
 
 function App()
 {
-	//const { DesktopBreakpoint } = variables
 	const [offsetY, setOffsetY] = useState(0)
 	const [mediumMode, smallMode] = useMediaQuery([
 		`(max-width: 1000px)`,
 		'(max-width: 800px)',
 	])
-	//const [smallMode] = useMediaQuery('(max-width: $MediumBreakpoint)')
 
 
 	const mouseMoveFunction = (event: any) =>
@@ -37,7 +35,6 @@ function App()
 			window.removeEventListener('mousemove', mouseMoveFunction)
 			window.removeEventListener('scroll', handleScroll)
 		})
-
 	}, [])
 
 	return (

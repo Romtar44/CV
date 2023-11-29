@@ -65,8 +65,12 @@ body {
 		width: calc($MediumBoxSize * 1.15 * 3);
 	}
 
-	.column {
-		margin-top: calc($MediumBoxSize / 1.5 * -1);
+	.mainContainer {
+		.container {
+			.column {
+				margin-top: calc($MediumBoxSize / -1.5);
+			}
+		}
 	}
 }
 
@@ -75,8 +79,12 @@ body {
 		width: calc($SmallBoxSize * 1.15 * 2);
 	}
 
-	.column {
-		margin-top: calc($SmallBoxSize / 1.5 * -1);
+	.mainContainer {
+		.container {
+			.column {
+				margin-top: calc($SmallBoxSize / -1.5);
+			}
+		}
 	}
 }
 
@@ -85,7 +93,11 @@ body {
 		width: calc($MobileBoxSize * 1.15 * 1.5);
 	}
 
-	.column {
-		margin-top: calc($MobileBoxSize / 1.5 * -1);
+	.mainContainer {
+		.container {
+			.column {
+				margin-top: calc($MobileBoxSize / -1.5);
+			}
+		}
 	}
 }

@@ -31,7 +31,7 @@ export const MainBox: React.FC<MainBoxProps> = ({
 					mobileMode ?
 						<div className={styles.boxTitleContainer}>
 							<BoxTitle title={title} description={description} />
-							<Image className={styles.arrow} imgSrc={ArrowIcon} alt='' w='35px' h='35px' />
+							<Image className={styles.staticArrow} imgSrc={ArrowIcon} alt='' w='35px' h='35px' />
 						</div>
 						:
 						<div>
