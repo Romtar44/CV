@@ -68,8 +68,8 @@
 				border: 2px solid white;
 				position: absolute;
 				border-radius: 50%;
+				right: 7%;
 				top: 200%;
-				display: flex;
 			}
 		}
 
@@ -90,6 +90,7 @@
 
 
 				.arrow {
+					display: flex;
 					rotate: 230deg;
 					transition: rotate 400ms linear;
 					right: 7%;
