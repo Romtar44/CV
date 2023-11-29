@@ -23,7 +23,7 @@ $MobileBoxSize: 39em;
 $MobileBoxSizeFocus: calc($MobileBoxSize * 1.1);
 
 $BoxBorderRadius: 0.65em;
-//$BoxBorderRadius: 25px;
+$SidePadding: calc($BoxBorderRadius + 0.2em);
 
 $BoxBounce: 105.1%;
 $BoxImageSizeExtend: 105%;
@@ -41,7 +41,8 @@ $BounceAnimTime: 200ms;
 $MarqueeAnimTime: 5s;
 $TitleBounceTime: 250ms;
 
-$MarqueeFontSize: 4rem;
+$MarqueeFontSize: 1em;
+
 
 @font-face {
 	font-family: PoppinsRoll;
