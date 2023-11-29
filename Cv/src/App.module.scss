@@ -55,6 +55,13 @@ body {
 			@include align-center;
 			display: flex;
 			flex-direction: column;
+		}
+
+		.longColumn {
+			margin-top: calc($BoxSize / -1);
+		}
+
+		.shortColumn {
 			margin-top: calc($BoxSize / -1.5);
 		}
 	}
@@ -67,7 +74,11 @@ body {
 
 	.mainContainer {
 		.container {
-			.column {
+			.longColumn {
+				margin-top: calc($MediumBoxSize / -1);
+			}
+
+			.shortColumn {
 				margin-top: calc($MediumBoxSize / -1.5);
 			}
 		}
@@ -81,7 +92,11 @@ body {
 
 	.mainContainer {
 		.container {
-			.column {
+			.longColumn {
+				margin-top: calc($SmallBoxSize / -1);
+			}
+
+			.shortColumn {
 				margin-top: calc($SmallBoxSize / -1.5);
 			}
 		}
@@ -95,7 +110,11 @@ body {
 
 	.mainContainer {
 		.container {
-			.column {
+			.longColumn {
+				margin-top: calc($MobileBoxSize / -1);
+			}
+
+			.shortColumn {
 				margin-top: calc($MobileBoxSize / -1.5);
 			}
 		}

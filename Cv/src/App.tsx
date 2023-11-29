@@ -16,7 +16,7 @@ function App()
 
 	const mouseMoveFunction = (event: any) =>
 	{
-		window.scroll({ left: event.pageX / (document.body.clientWidth / (document.body.clientWidth - screen.width)), behavior: 'instant' })
+		window.scroll({ left: event.pageX / (document.body.clientWidth / (document.body.clientWidth - window.innerWidth)), behavior: 'instant' })
 	}
 
 	const handleScroll = () =>
@@ -26,7 +26,7 @@ function App()
 
 	useEffect(() =>
 	{
-		window.scroll({ top: 0, left: (document.body.clientWidth / 2) / (document.body.clientWidth / (document.body.clientWidth - screen.width)), behavior: 'instant' })
+		window.scroll({ top: document.body.clientHeight / 2, left: (document.body.clientWidth / 2) / (document.body.clientWidth / (document.body.clientWidth - window.innerWidth)), behavior: 'instant' })
 		window.addEventListener('mousemove', mouseMoveFunction)
 		window.addEventListener('scroll', handleScroll)
 
@@ -37,6 +37,7 @@ function App()
 		})
 	}, [])
 
+	console.log(window.innerWidth)
 	return (
 		<>
 			{
