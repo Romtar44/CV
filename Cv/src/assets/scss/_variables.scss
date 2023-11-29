@@ -19,10 +19,12 @@ $MediumBoxSizeFocus: calc($MediumBoxSize * 1.1);
 $SmallBoxSize: 23.673em;
 $SmallBoxSizeFocus: calc($SmallBoxSize * 1.1);
 //Mobile < 500px
-$MobileBoxSize: 40em;
+$MobileBoxSize: 39em;
 $MobileBoxSizeFocus: calc($MobileBoxSize * 1.1);
 
-$BoxBorderRadius: 25px;
+$BoxBorderRadius: 0.65em;
+//$BoxBorderRadius: 25px;
+
 $BoxBounce: 105.1%;
 $BoxImageSizeExtend: 105%;
 $BoxImageSizeNarrow: 105%;

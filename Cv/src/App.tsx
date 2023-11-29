@@ -1,6 +1,7 @@
 import styles from './App.module.scss'
 import { MainBox } from './components/mainBox/mainbox'
 import Pp from './assets/rtournet.jpg'
+import Pong from './assets/miniature4(1).png'
 import { useEffect, useState } from 'react'
 import { useMediaQuery } from '@chakra-ui/react'
 
@@ -37,7 +38,6 @@ function App()
 		})
 	}, [])
 
-	console.log(window.innerWidth)
 	return (
 		<>
 			{
@@ -47,43 +47,43 @@ function App()
 					<div className={styles.container}>
 
 						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 
 						<div className={styles.longColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 
 						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 
 						<div className={styles.longColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 
 						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 					</div>
 				</div >
@@ -95,39 +95,39 @@ function App()
 					<div className={styles.container}>
 
 						<div className={styles.longColumn + " " + styles.column} style={smallMode ? {} : { transform: `translateY(${offsetY * 0.5}px)` }}>
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 
 						<div className={styles.shortColumn + " " + styles.column} style={smallMode ? {} : { transform: `translateY(${offsetY * 0.3}px)` }}>
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 
 						<div className={styles.longColumn + " " + styles.column} style={smallMode ? {} : { transform: `translateY(${offsetY * 0.5}px)` }}>
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 					</div>
 				</div >

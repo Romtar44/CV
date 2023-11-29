@@ -1,93 +1,111 @@
+@mixin align-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .container {
 	display: flex;
 	justify-content: center;
 	width: calc($BoxSize * 1.15);
 	height: calc($BoxSize * 1.15);
-}
 
-.boxContainer {
-	width: $BoxSize;
-	height: $BoxSize;
-	border-radius: $BoxBorderRadius;
-	position: relative;
-	transition: $BoxTransitionTime ease-out;
-	overflow: hidden;
-	cursor: pointer;
-	margin: auto;
-
-	.title {
-		padding-left: $BoxBorderRadius;
-		top: 83%;
-		position: absolute;
-		width: 500px;
-		height: 1.9rem;
-		font-size: 1.9rem;
-		animation: reverseBounceTitle 200ms linear;
-		color: white;
-	}
-
-	.mainImgContainer {
+	.boxContainer {
+		width: $BoxSize;
+		height: $BoxSize;
+		border-radius: $BoxBorderRadius;
+		position: relative;
+		transition: $BoxTransitionTime ease-out;
 		overflow: hidden;
-		display: flex;
-		border: 1px solid $bordercolor;
-		border-radius: 25px;
-	}
+		cursor: pointer;
+		margin: auto;
 
-	.marquee {
-		display: none;
-	}
-
-	.boxTitleContainer {
-		display: flex;
-		width: 100%;
-		height: 5rem;
-		position: absolute;
-		top: 100%;
-		animation: reverseTitle $TitleBounceTime ease-in-out;
-
-		.arrow {
+		.blurred {
+			width: 120%;
+			height: 3.5em;
 			position: absolute;
-			top: 200%;
-		}
-	}
-
-	&:hover {
-		transform: scale(1.05);
-
-		.marquee {
-			display: block;
+			bottom: -10%;
+			left: 50%;
+			translate: -50%;
+			filter: blur(17px);
 		}
 
 		.title {
+			padding-left: calc($BoxBorderRadius + 0.2em);
+			padding-right: calc($BoxBorderRadius + 0.2em);
+			top: 83%;
+			bottom: 0%;
+			left: 0%;
+			right: 0%;
+			position: absolute;
+			width: $BoxSize;
+			height: 1.9rem;
+			font-size: 1em;
+			animation: reverseBounceTitle 200ms linear;
+			color: white;
+		}
+
+		.mainImgContainer {
+			overflow: hidden;
+			display: flex;
+			border-radius: $BoxBorderRadius;
+		}
+
+		.marquee {
 			display: none;
 		}
 
 		.boxTitleContainer {
-			animation: bounceTitle $TitleBounceTime linear;
-			top: 80%;
+			display: flex;
+			width: 100%;
+			height: 5rem;
+			position: absolute;
+			top: 100%;
+			animation: reverseTitle $TitleBounceTime ease-in-out;
 
 			.arrow {
-				display: flex;
-				rotate: 230deg;
-				transition: rotate 400ms linear;
-				border: 2px solid white;
-				border-radius: 50%;
-				right: 7%;
-				top: 50%;
-				translate: 0 -50%;
+				position: absolute;
+				top: 200%;
 			}
 		}
 
-		.mainImgContainer {
-			position: relative;
+		&:hover {
 			transform: scale(1.05);
-			object-position: center center;
-			bottom: calc(calc($BoxImageSizeExtend - 100%) / 2);
-			right: calc(calc($BoxImageSizeExtend - 100%) / 2);
 
-			img {
-				animation: bounceImage $BounceAnimTime linear;
+			.marquee {
+				display: block;
+			}
+
+			.title {
+				display: none;
+			}
+
+			.boxTitleContainer {
+				animation: bounceTitle $TitleBounceTime linear;
+				top: 80%;
+
+				.arrow {
+					display: flex;
+					rotate: 230deg;
+					transition: rotate 400ms linear;
+					border: 2px solid white;
+					border-radius: 50%;
+					right: 7%;
+					top: 50%;
+					translate: 0 -50%;
+				}
+			}
+
+			.mainImgContainer {
+				border: none;
 				position: relative;
+				transform: scale(1.05);
+				object-position: center center;
+
+				img {
+					animation: bounceImage $BounceAnimTime linear;
+					position: relative;
+				}
 			}
 		}
 	}
@@ -97,94 +115,89 @@
 	.container {
 		width: calc($MediumBoxSize * 1.15);
 		height: calc($MediumBoxSize * 1.15);
-	}
 
-	.boxContainer {
-		transition: none;
-		width: $MediumBoxSize;
-		height: $MediumBoxSize;
+		.boxContainer {
+			width: $MediumBoxSize;
+			height: $MediumBoxSize;
 
-		.title {
-			animation: none;
-		}
-
-		&:hover {
-			transform: scale(1);
-
-
-			.mainImgContainer {
-				animation: none;
-				transform: scale(1);
-				bottom: 0;
-				right: 0;
-
-				img {
-					animation: none;
-				}
-			}
-
-			.marquee {
-				display: none;
+			&:hover {
+				transform: scale(1.05);
 			}
 		}
 	}
-
-	.boxTitleContainer {
-		top: 80% !important;
-		animation: none;
-		display: flex;
-
-		.staticArrow {
-			display: flex;
-			rotate: 230deg;
-			position: absolute;
-			border: 2px solid white;
-			border-radius: 50%;
-			right: 7%;
-			top: 50%;
-			translate: 0 -50%;
-		}
-	}
-
 }
 
 @media screen and (max-width: $MediumBreakpoint) {
 	.container {
 		width: calc($SmallBoxSize * 1.15);
 		height: calc($SmallBoxSize * 1.15);
-	}
 
-	.boxContainer {
-		transition: none;
-		width: $SmallBoxSize;
-		height: $SmallBoxSize;
+		.boxTitleContainer {
+			top: 80% !important;
+			animation: none;
+			display: flex;
 
-		&:hover {
+			.staticArrow {
+				display: flex;
+				rotate: 230deg;
+				position: absolute;
+				border: 2px solid white;
+				border-radius: 50%;
+				right: 7%;
+				top: 50%;
+				translate: 0 -50%;
+			}
+		}
+
+		.boxContainer {
+			transition: none;
 			width: $SmallBoxSize;
 			height: $SmallBoxSize;
+
+			.title {
+				animation: none;
+			}
+
+			&:hover {
+				width: $SmallBoxSize;
+				height: $SmallBoxSize;
+
+				.mainImgContainer {
+					animation: none;
+					transform: scale(1);
+					bottom: 0;
+					right: 0;
+
+					img {
+						animation: none;
+					}
+				}
+
+				.marquee {
+					display: none;
+				}
+			}
 		}
 	}
 }
 
 @media screen and (max-width: $SmallBreakpoint) {
 	.container {
-		width: calc($MobileBoxSize * 1.10);
-		height: calc($MobileBoxSize * 1.10);
-	}
+		width: calc($MobileBoxSize * 1.05);
+		height: calc($MobileBoxSize * 1.05);
 
-	.boxContainer {
-		transition: none;
-		width: $MobileBoxSize;
-		height: $MobileBoxSize;
-
-		&:hover {
+		.boxContainer {
+			transition: none;
 			width: $MobileBoxSize;
 			height: $MobileBoxSize;
+
+			&:hover {
+				width: $MobileBoxSize;
+				height: $MobileBoxSize;
+			}
 		}
 	}
 }
-
-
 
 @keyframes reverseTitle {
 	0% {
@@ -224,17 +237,14 @@
 
 @keyframes bounceImage {
 	0% {
-		width: 100% !important;
-		height: 100%;
+		transform: scale(1);
 	}
 
 	85% {
-		width: $BoxBounce !important;
-		height: $BoxBounce;
+		transform: scale(1.1);
 	}
 
 	100% {
-		width: $BoxImageSizeExtend !important;
-		height: $BoxImageSizeExtend;
+		transform: scale(1);
 	}
 }
