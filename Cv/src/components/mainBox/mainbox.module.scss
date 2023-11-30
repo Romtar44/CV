@@ -46,9 +46,11 @@
 		}
 
 		.mainImgContainer {
+			position: relative;
 			overflow: hidden;
 			display: flex;
 			border-radius: $BoxBorderRadius;
+			object-position: center center;
 		}
 
 		.marquee {
@@ -105,10 +107,7 @@
 			}
 
 			.mainImgContainer {
-				border: none;
-				position: relative;
 				transform: scale(1.05);
-				object-position: center center;
 
 				img {
 					animation: bounceImage $BounceAnimTime linear;
@@ -130,10 +129,6 @@
 
 			.arrowContainer {
 				translate: 0 20%;
-			}
-
-			&:hover {
-				transform: scale(1.05);
 			}
 		}
 	}
@@ -167,7 +162,7 @@
 			}
 
 			&:hover {
-				transform: scale(1);
+				transform: none;
 
 				.arrowContainer {
 					transition: none;
@@ -175,7 +170,7 @@
 
 				.mainImgContainer {
 					animation: none;
-					transform: scale(1);
+					transform: none;
 
 					img {
 						animation: none;
