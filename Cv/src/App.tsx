@@ -28,7 +28,10 @@ function App()
 	useEffect(() =>
 	{
 		window.scroll({ top: document.body.clientHeight / 2, left: (document.body.clientWidth / 2) / (document.body.clientWidth / (document.body.clientWidth - window.innerWidth)), behavior: 'instant' })
-		window.addEventListener('mousemove', mouseMoveFunction)
+		if (!smallMode)
+			window.addEventListener('mousemove', mouseMoveFunction)
+		else
+			window.removeEventListener('mousemove', mouseMoveFunction)
 		window.addEventListener('scroll', handleScroll)
 
 		return (() =>
@@ -36,7 +39,7 @@ function App()
 			window.removeEventListener('mousemove', mouseMoveFunction)
 			window.removeEventListener('scroll', handleScroll)
 		})
-	}, [])
+	}, [smallMode])
 
 	return (
 		<>
