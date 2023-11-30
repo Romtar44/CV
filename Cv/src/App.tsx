@@ -97,7 +97,7 @@ function App()
 
 					<div className={styles.container}>
 
-						<div className={styles.longColumn + " " + styles.column} style={smallMode ? {} : { transform: `translateY(${offsetY * 0.5}px)` }}>
+						<div className={styles.longColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
 							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
 							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
@@ -109,7 +109,7 @@ function App()
 							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 
-						<div className={styles.shortColumn + " " + styles.column} style={smallMode ? {} : { transform: `translateY(${offsetY * 0.3}px)` }}>
+						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.3}px)` }}>
 							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
@@ -121,7 +121,7 @@ function App()
 							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 
-						<div className={styles.longColumn + " " + styles.column} style={smallMode ? {} : { transform: `translateY(${offsetY * 0.5}px)` }}>
+						<div className={styles.longColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
 							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développer par moi même' />
 							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} title='Mon cv' description='Site vitrine développé par moi même' />
