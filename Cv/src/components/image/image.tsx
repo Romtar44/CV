@@ -18,7 +18,7 @@ const Image = ({
 {
 	return (
 		<div className={className} style={{ width: w, height: h, border: border }}>
-			<img src={imgSrc} alt={alt} style={{}} />
+			<img src={imgSrc} alt={alt} />
 		</div>)
 }
 

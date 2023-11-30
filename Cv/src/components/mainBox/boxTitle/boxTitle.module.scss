@@ -12,8 +12,44 @@
 	}
 
 	i {
-		font-size: 0.5em;
-		font-weight: 800;
+		font-size: 0.6em;
+		font-weight: 400;
 		position: relative;
+	}
+}
+
+@media screen and (max-width: $DesktopBreakpoint) {
+	.titleContainer {
+		h3 {
+			font-size: 1.5em;
+		}
+
+		i {
+			font-size: 0.8em;
+		}
+	}
+}
+
+@media screen and (max-width: $MediumBreakpoint) {
+	.titleContainer {
+		h3 {
+			font-size: 2.4em;
+		}
+
+		i {
+			font-size: 1.2em;
+		}
+	}
+}
+
+@media screen and (max-width: $SmallBreakpoint) {
+	.titleContainer {
+		h3 {
+			font-size: 3.8em;
+		}
+
+		i {
+			font-size: 2em;
+		}
 	}
 }

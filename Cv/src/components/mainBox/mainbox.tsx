@@ -53,7 +53,9 @@ export const MainBox: React.FC<MainBoxProps> = ({
 							<div className={styles.blurred} style={{ backgroundColor: color }}></div>
 							<div className={styles.boxTitleContainer}>
 								<BoxTitle title={title} description={description} />
-								<Image className={styles.staticArrow} border='2px solid white' imgSrc={ArrowIcon} alt='' w='35px' h='35px' />
+								<div className={styles.arrowContainer}>
+									<Image className={styles.arrow} border='2px solid white' imgSrc={ArrowIcon} alt='' />
+								</div>
 							</div>
 						</div>
 						:
@@ -62,7 +64,9 @@ export const MainBox: React.FC<MainBoxProps> = ({
 							<i className={styles.title}>{title}</i>
 							<div className={styles.boxTitleContainer}>
 								<BoxTitle title={title} description={description} />
-								<Image className={styles.arrow} border='2px solid white' imgSrc={ArrowIcon} alt='' w='1.2em' h='1.2em' />
+								<div className={styles.arrowContainer}>
+									<Image className={styles.arrow} border='2px solid white' imgSrc={ArrowIcon} alt='' />
+								</div>
 							</div>
 						</div>
 				}
