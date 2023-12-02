@@ -1,4 +1,6 @@
 import React from "react";
+import styles from './projectBox.module.scss'
+import Image from "../image/image";
 
 type ProjectBoxProps = {
 	title: string
@@ -28,8 +30,25 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
 	text
 	link
 	return (
-		<div>
+		<div className={styles.container}>
 
+			<div className={styles.textContainer}>
+				<h2 className={styles.mainTitle}>
+					{title}
+				</h2>
+				<span>
+					{text}
+				</span>
+				<br></br>
+				<a href={link}>{link} </a>
+				<br></br>
+				<a href={linkGh}>{linkGh} </a>
+			</div>
+
+			<div className={styles.firstBox}>
+				<Image imgSrc={img} alt="" border="none" />
+				<i>{techno}</i>
+			</div>
 		</div>
 	)
 }

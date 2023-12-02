@@ -1,0 +1,119 @@
+html,
+:root {
+	font-size: 2.06vw;
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
+	max-height: 100%;
+	color: white;
+
+	* {
+		box-sizing: border-box;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	*::-webkit-scrollbar {
+		width: 0px;
+		height: 0px;
+		appearance: none;
+		color: transparent;
+	}
+
+	scrollbar-color: transparent transparent;
+}
+
+@mixin align-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	width: calc($BoxSize * 1.15 * 4);
+}
+
+.mainContainer {
+	margin: auto;
+	width: 100%;
+	overflow: hidden;
+
+	background-color: black;
+	z-index: -1;
+
+	.container {
+		@include align-center;
+
+		width: 100%;
+		position: relative;
+
+		.column {
+			position: relative;
+			@include align-center;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.longColumn {
+			margin-top: calc($BoxSize / -1);
+		}
+
+		.shortColumn {
+			margin-top: calc($BoxSize / -1.5);
+		}
+	}
+}
+
+@media screen and (max-width: $DesktopBreakpoint) {
+	body {
+		width: calc($MediumBoxSize * 1.15 * 3);
+	}
+
+	.mainContainer {
+		.container {
+			.longColumn {
+				margin-top: calc($MediumBoxSize / -1);
+			}
+
+			.shortColumn {
+				margin-top: calc($MediumBoxSize / -1.5);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $MediumBreakpoint) {
+	body {
+		width: calc($SmallBoxSize * 1.15 * 2);
+	}
+
+	.mainContainer {
+		.container {
+			.longColumn {
+				margin-top: calc($SmallBoxSize / -1);
+			}
+
+			.shortColumn {
+				margin-top: calc($SmallBoxSize / -1.5);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $SmallBreakpoint) {
+	body {
+		width: 100vw;
+	}
+
+	.mainContainer {
+		.container {
+			.longColumn {
+				margin-top: calc($MobileBoxSize / -1);
+			}
+
+			.shortColumn {
+				margin-top: calc($MobileBoxSize / -1.5);
+			}
+		}
+	}
+}
