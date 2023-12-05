@@ -1,8 +1,13 @@
-img {
-	position: relative;
-	margin: auto;
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-	object-position: center center;
+.imgContainer {
+	overflow: hidden;
+	display: flex;
+
+	img {
+		position: relative;
+		margin: auto;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		object-position: center center;
+	}
 }

@@ -1,5 +1,5 @@
 $headercolor: #751B44;
-$bordercolor: #262626;
+$bordercolor: #4f4f4f;
 
 
 //Breakpoint
@@ -47,4 +47,19 @@ $MarqueeFontSize: 1em;
 @font-face {
 	font-family: PoppinsRoll;
 	src: url(/assets/fonts/Poppins/Poppins-Thin.ttf);
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+	font-family: PoppinsTitle;
+	src: url(/assets/fonts/Poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+	font-family: PoppinsItalic;
+	src: url(/assets/fonts/Poppins/Poppins-LightItalic.ttf);
 }

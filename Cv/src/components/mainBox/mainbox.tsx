@@ -5,6 +5,7 @@ import { Marquee } from '../marquee/marquee'
 import { BoxTitle } from './boxTitle/boxTitle'
 import { useMediaQuery } from '@chakra-ui/react'
 import ArrowIcon from '../../assets/arrowIcon.svg'
+import { useNavigate } from 'react-router-dom'
 
 function lightenColor(hexColor: string, percent: number): string
 {
@@ -28,6 +29,7 @@ type MainBoxProps = {
 	description: string,
 	color?: string,
 	img: string,
+	path: string
 }
 
 export const MainBox: React.FC<MainBoxProps> = ({
@@ -35,13 +37,14 @@ export const MainBox: React.FC<MainBoxProps> = ({
 	description,
 	color = 'black',
 	img,
+	path = '/'
 }) =>
 {
 	const [mobileMode] = useMediaQuery('(max-width: 800px)')
-
+	const navigator = useNavigate()
 
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} onClick={() => { navigator(path) }}>
 			<div className={styles.boxContainer}>
 				<Image className={styles.mainImgContainer} border={`2px solid ${lightenColor(color, 20)}`} imgSrc={img} alt='' w='100%' h='100%' />
 				<div className={styles.marquee}>
