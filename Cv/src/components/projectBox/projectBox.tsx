@@ -50,7 +50,10 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
 					<Image imgSrc={img} className={styles.imgClass} alt="" border="none" w="80%" h="auto" />
 					<div className={styles.technoContainer}>
 						{
-							techno.map((tech) => tech)
+							techno.map((tech) =>
+							{
+								return tech
+							})
 						}
 					</div>
 				</div>
@@ -63,12 +66,12 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
 				</h2>
 
 				<div className={styles.projectContainerMobile}>
+					<Image imgSrc={img} className={styles.imgClassMobile} alt="" border="none" w="75%" h="auto" />
 					<div className={styles.technoContainerMobile}>
 						{
 							techno.map((tech) => tech)
 						}
 					</div>
-					<Image imgSrc={img} className={styles.imgClassMobile} alt="" border="none" w="75%" h="auto" />
 				</div>
 
 				<div className={styles.textMobile}>
@@ -84,3 +87,5 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
 			</div>
 	)
 }
+
+export default ProjectBox

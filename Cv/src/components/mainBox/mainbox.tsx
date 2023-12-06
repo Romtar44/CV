@@ -41,10 +41,10 @@ export const MainBox: React.FC<MainBoxProps> = ({
 }) =>
 {
 	const [mobileMode] = useMediaQuery('(max-width: 800px)')
-	const navigator = useNavigate()
+	const navig = useNavigate()
 
 	return (
-		<div className={styles.container} onClick={() => { navigator(path) }}>
+		<div className={styles.container} onClick={() => { navig(path) }}>
 			<div className={styles.boxContainer}>
 				<Image className={styles.mainImgContainer} border={`2px solid ${lightenColor(color, 20)}`} imgSrc={img} alt='' w='100%' h='100%' />
 				<div className={styles.marquee}>

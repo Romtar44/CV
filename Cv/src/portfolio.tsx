@@ -14,8 +14,6 @@ function Portfolio()
 		'(max-width: 800px)',
 	])
 
-	const navigator = useNavigate()
-
 	const mouseMoveFunction = (event: any) =>
 	{
 		window.scroll({ left: event.pageX / (document.body.clientWidth / (document.body.clientWidth - window.innerWidth)), behavior: 'instant' })

@@ -7,20 +7,24 @@ export type TechnoBoxProps = {
 	techName: string,
 	w?: string,
 	h?: string,
+	link: string,
 }
 
 export const TechnoBox: React.FC<TechnoBoxProps> = ({
 	logo,
 	techName,
 	w = '40px',
-	h = '40px'
+	h = '40px',
+	link
 }) =>
 {
 
 	return (
-		<div className={styles.container}>
-			<Image imgSrc={logo} alt={techName} w={w} h={h} border='none' />
-			<span>{techName}</span>
-		</div>
+		<a href={link} rel='external nofollow' target='_blank'>
+			<div className={styles.container}>
+				<Image imgSrc={logo} alt={techName} w={w} h={h} border='none' />
+				<span>{techName}</span>
+			</div>
+		</a>
 	)
 }

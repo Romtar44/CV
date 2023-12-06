@@ -2,11 +2,15 @@ html,
 :root {
 	font-size: 2.06vw;
 	max-height: 100%;
+	max-width: 100%;
+	overflow: auto;
+	//width: 100vw;
 }
 
 body {
 	margin: 0;
 	padding: 0;
+	width: 100vw;
 }
 
 * {
@@ -76,7 +80,10 @@ body {
 		}
 
 		.technoContainer {
+			width: 400px;
 			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
 			gap: 10px;
 			font-family: 'PoppinsItalic';
 			font-size: 0.5rem;
@@ -111,6 +118,18 @@ body {
 		.projectContainer {
 			width: 400px;
 			padding: 0 0.5rem;
+
+
+
+			.technoContainer {
+				width: 250px;
+				font-size: 1rem;
+
+				img {
+					width: 30px;
+					height: 30px;
+				}
+			}
 		}
 	}
 }
@@ -136,16 +155,31 @@ body {
 
 	.projectContainerMobile {
 		@include align-center();
+		flex-direction: column;
+		width: 100%;
 
 		.imgClassMobile {
 			border-radius: $BoxBorderRadius;
+
+			img {
+				width: 100%;
+			}
 		}
 
 		.technoContainerMobile {
 			margin: auto;
 			display: flex;
-			flex-direction: column;
-			gap: 20px;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			width: 80%;
+			gap: 5px;
+			height: 100px;
+
+			img {
+				width: 35px;
+				height: 35px;
+			}
 
 			span {
 				display: none;
@@ -154,6 +188,7 @@ body {
 	}
 
 	.textMobile {
+		text-align: center;
 		margin: auto;
 		font-family: 'Poppins';
 		font-size: 2.5rem;
@@ -161,7 +196,7 @@ body {
 
 	.linksMobile {
 		margin: auto;
-		font-size: 1.5rem;
+		font-size: 1.8rem;
 		font-family: 'PoppinsItalic';
 
 		a {
@@ -177,5 +212,6 @@ body {
 @media screen and (max-width: $SmallBreakpoint) {
 	.containerMobile {
 		gap: 20px;
+
 	}
 }
