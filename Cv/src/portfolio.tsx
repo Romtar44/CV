@@ -16,7 +16,7 @@ function Portfolio()
 
 	const mouseMoveFunction = (event: any) =>
 	{
-		window.scroll({ left: event.pageX / (document.body.clientWidth / (document.body.clientWidth - window.innerWidth)), behavior: 'instant' })
+		window.scroll({ left: event.pageX / (document.documentElement.scrollWidth / (document.documentElement.scrollWidth - window.innerWidth)), behavior: 'instant' })
 	}
 
 	const handleScroll = () =>
@@ -24,9 +24,10 @@ function Portfolio()
 		setOffsetY(window.scrollY)
 	}
 
+
 	useEffect(() =>
 	{
-		window.scroll({ top: document.body.clientHeight / 2, left: (document.body.clientWidth / 2) / (document.body.clientWidth / (document.body.clientWidth - window.innerWidth)), behavior: 'instant' })
+		window.scroll({ top: document.body.clientHeight / 2, left: (document.documentElement.scrollWidth / 2) / (document.documentElement.scrollWidth / (document.documentElement.scrollWidth - window.innerWidth)), behavior: 'instant' })
 		if (!smallMode)
 			window.addEventListener('mousemove', mouseMoveFunction)
 		else
@@ -40,8 +41,7 @@ function Portfolio()
 		})
 	}, [smallMode])
 
-
-
+	console.log(document.documentElement.scrollWidth)
 
 	return (
 		<>
@@ -56,7 +56,10 @@ function Portfolio()
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 
 						<div className={styles.longColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
@@ -65,28 +68,44 @@ function Portfolio()
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
+
 						</div>
 
 						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
-							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 
 						<div className={styles.longColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
+							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
+
 						</div>
 
 						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
@@ -111,7 +130,7 @@ function Portfolio()
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 
-						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.3}px)` }}>
+						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#20201e' img={Pp} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />

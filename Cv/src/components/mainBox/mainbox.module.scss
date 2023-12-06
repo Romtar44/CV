@@ -33,10 +33,11 @@
 		.title {
 			padding-left: $SidePadding;
 			padding-right: $SidePadding;
-			top: 83%;
+			top: 78%;
 			bottom: 0%;
 			left: 0%;
 			right: 0%;
+			font-family: 'PoppinsTitle';
 			position: absolute;
 			width: $BoxSize;
 			height: fit-content;
@@ -95,7 +96,7 @@
 
 			.boxTitleContainer {
 				animation: bounceTitle $TitleBounceTime linear;
-				top: 78%;
+				top: 75%;
 
 				.arrowContainer {
 					display: flex;
@@ -127,6 +128,10 @@
 			width: $MediumBoxSize;
 			height: $MediumBoxSize;
 
+			.title {
+				font-size: 1.4em;
+			}
+
 			.arrowContainer {
 				translate: 0 20%;
 			}
@@ -140,7 +145,7 @@
 		height: calc($SmallBoxSize * 1.15);
 
 		.boxTitleContainer {
-			top: 78% !important;
+			top: 75% !important;
 			animation: none;
 			display: flex;
 
@@ -231,11 +236,11 @@
 
 	50% {
 		opacity: 1;
-		top: 75%;
+		top: 70%;
 	}
 
 	90% {
-		top: 85%;
+		top: 78%;
 	}
 }
 

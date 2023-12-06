@@ -30,12 +30,15 @@ html,
 }
 
 body {
-	width: calc($BoxSize * 1.15 * 4);
+	margin: 0;
+	padding: 0;
 }
 
 .mainContainer {
 	margin: auto;
-	width: 100%;
+	width: calc($BoxSize * 1.15 * 4);
+	height: calc($BoxSize * 1.15 * 9);
+
 	overflow: hidden;
 
 	background-color: black;
