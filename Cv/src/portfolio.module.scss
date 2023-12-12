@@ -37,7 +37,7 @@ body {
 .mainContainer {
 	margin: auto;
 	width: calc($BoxSize * 1.15 * 4);
-	height: calc($BoxSize * 1.15 * 9);
+	height: calc($BoxSize * 1.15 * 8);
 
 	overflow: hidden;
 
@@ -58,11 +58,11 @@ body {
 		}
 
 		.longColumn {
-			margin-top: calc($BoxSize / -1);
+			margin-top: calc($BoxSize / -0.8);
 		}
 
 		.shortColumn {
-			margin-top: calc($BoxSize / -1.5);
+			margin-top: calc($BoxSize / -0.5);
 		}
 	}
 }
@@ -75,11 +75,11 @@ body {
 	.mainContainer {
 		.container {
 			.longColumn {
-				margin-top: calc($MediumBoxSize / -1);
+				margin-top: calc($MediumBoxSize / -0.8);
 			}
 
 			.shortColumn {
-				margin-top: calc($MediumBoxSize / -1.5);
+				margin-top: calc($MediumBoxSize / -0.5);
 			}
 		}
 	}
@@ -91,13 +91,15 @@ body {
 	}
 
 	.mainContainer {
+		height: 500vh;
+
 		.container {
 			.longColumn {
-				margin-top: calc($SmallBoxSize / -1);
+				margin-top: calc($SmallBoxSize / -0.8);
 			}
 
 			.shortColumn {
-				margin-top: calc($SmallBoxSize / -1.5);
+				margin-top: calc($SmallBoxSize / -0.5);
 			}
 		}
 	}
@@ -109,13 +111,14 @@ body {
 	}
 
 	.mainContainer {
+
 		.container {
 			.longColumn {
-				margin-top: calc($MobileBoxSize / -1);
+				margin-top: calc($MobileBoxSize / -0.8);
 			}
 
 			.shortColumn {
-				margin-top: calc($MobileBoxSize / -1.5);
+				margin-top: calc($MobileBoxSize / -0.5);
 			}
 		}
 	}
