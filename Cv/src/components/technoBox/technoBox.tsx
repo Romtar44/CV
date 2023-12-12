@@ -8,6 +8,7 @@ export type TechnoBoxProps = {
 	w?: string,
 	h?: string,
 	link: string,
+	title: string,
 }
 
 export const TechnoBox: React.FC<TechnoBoxProps> = ({
@@ -15,13 +16,14 @@ export const TechnoBox: React.FC<TechnoBoxProps> = ({
 	techName,
 	w = '40px',
 	h = '40px',
-	link
+	link,
+	title,
 }) =>
 {
 
 	return (
 		<a href={link} rel='external nofollow' target='_blank'>
-			<div className={styles.container}>
+			<div className={styles.container} title={title}>
 				<Image imgSrc={logo} alt={techName} w={w} h={h} border='none' />
 				<span>{techName}</span>
 			</div>

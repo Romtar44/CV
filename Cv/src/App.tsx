@@ -20,24 +20,24 @@ function App()
 {
 
 	const portfolioTechnoList = [
-		< TechnoBox logo={ReactLogo} techName='React' link="https://fr.legacy.reactjs.org/" />,
-		< TechnoBox logo={TSLogo} techName='TypeScript' link="https://www.typescriptlang.org/" />,
-		< TechnoBox logo={HtmlLogo} techName='Html' link="https://developer.mozilla.org/fr/docs/Web/HTML" />,
-		< TechnoBox logo={ScssLogo} techName='Scss' link="https://sass-lang.com/" />,
-		< TechnoBox logo={ViteLogo} techName='Vite' link="https://vitejs.dev/" />,
+		< TechnoBox title="React" logo={ReactLogo} techName='React' link="https://fr.legacy.reactjs.org/" />,
+		< TechnoBox title="TypeScript" logo={TSLogo} techName='TypeScript' link="https://www.typescriptlang.org/" />,
+		< TechnoBox title="HTML5" logo={HtmlLogo} techName='Html' link="https://developer.mozilla.org/fr/docs/Web/HTML" />,
+		< TechnoBox title="Scss" logo={ScssLogo} techName='Scss' link="https://sass-lang.com/" />,
+		< TechnoBox title="Vite" logo={ViteLogo} techName='Vite' link="https://vitejs.dev/" />,
 	]
 
 	const transcendanceTechnoList = [
-		< TechnoBox logo={NestLogo} techName='Nest' link="https://nestjs.com/" />,
-		< TechnoBox logo={ReactLogo} techName='React' link="https://fr.legacy.reactjs.org/" />,
-		< TechnoBox logo={TSLogo} techName='TypeScript' link="https://www.typescriptlang.org/" />,
-		< TechnoBox logo={DockerLogo} techName='Docker' link="https://www.docker.com/" />,
-		< TechnoBox logo={PrismaLogo} techName='Prisma' link="https://www.prisma.io/" />,
-		< TechnoBox logo={PostgreLogo} techName='PostgreSQL' link="https://www.postgresql.org/" />,
-		< TechnoBox logo={HtmlLogo} techName='Html' link="https://developer.mozilla.org/fr/docs/Web/HTML" />,
-		< TechnoBox logo={ScssLogo} techName='Scss' link="https://sass-lang.com/" />,
-		< TechnoBox logo={JWTLogo} techName='JWT' link="https://jwt.io/" />,
-		< TechnoBox logo={SocketIOLogo} techName='SocketIO' link="https://socket.io/fr" />,
+		< TechnoBox title="Nest.JS" logo={NestLogo} techName='Nest.JS' link="https://nestjs.com/" />,
+		< TechnoBox title="React" logo={ReactLogo} techName='React' link="https://fr.legacy.reactjs.org/" />,
+		< TechnoBox title="TypeScript" logo={TSLogo} techName='TypeScript' link="https://www.typescriptlang.org/" />,
+		< TechnoBox title="Docker" logo={DockerLogo} techName='Docker' link="https://www.docker.com/" />,
+		< TechnoBox title="Prisma" logo={PrismaLogo} techName='Prisma' link="https://www.prisma.io/" />,
+		< TechnoBox title="PostgreSQL" logo={PostgreLogo} techName='PostgreSQL' link="https://www.postgresql.org/" />,
+		< TechnoBox title="HTML5" logo={HtmlLogo} techName='HTML5' link="https://developer.mozilla.org/fr/docs/Web/HTML" />,
+		< TechnoBox title="Scss" logo={ScssLogo} techName='Scss' link="https://sass-lang.com/" />,
+		< TechnoBox title="JWT" logo={JWTLogo} techName='JWT' link="https://jwt.io/" />,
+		< TechnoBox title="Socket.IO" logo={SocketIOLogo} techName='Socket.IO' link="https://socket.io/fr" />,
 	]
 
 

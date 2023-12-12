@@ -22,8 +22,10 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
 	linkGh = 'https://github.com/Romtar44'
 }) =>
 {
-	const [smallMode] = useMediaQuery([
-		'(max-width: 800px)'
+	const [mobileMode, smallMode, mediumMode] = useMediaQuery([
+		'(max-width: 500px)',
+		'(max-width: 800px)',
+		'(max-width: 1000px)'
 	])
 
 	return (
@@ -47,7 +49,9 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
 				</div>
 
 				<div className={styles.projectContainer}>
-					<Image imgSrc={img} className={styles.imgClass} alt="" border="none" w="80%" h="auto" />
+					<a href={link}>
+						<Image imgSrc={img} className={styles.imgClass} alt="" border="none" w={mediumMode ? "380px" : "500px"} h="auto" />
+					</a>
 					<div className={styles.technoContainer}>
 						{
 							techno.map((tech) =>
@@ -66,7 +70,9 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
 				</h2>
 
 				<div className={styles.projectContainerMobile}>
-					<Image imgSrc={img} className={styles.imgClassMobile} alt="" border="none" w="75%" h="auto" />
+					<a href={link}>
+						<Image imgSrc={img} className={styles.imgClassMobile} alt="" border="none" w="100%" h="auto" />
+					</a>
 					<div className={styles.technoContainerMobile}>
 						{
 							techno.map((tech) => tech)
@@ -77,7 +83,6 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
 				<div className={styles.textMobile}>
 					{text}
 				</div>
-
 
 				<div className={styles.linksMobile}>
 					<a href={link}>{link} </a>
