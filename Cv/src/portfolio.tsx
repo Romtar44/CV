@@ -4,7 +4,6 @@ import Pp from './assets/rtournet.jpg'
 import Pong from './assets/miniature4(1).png'
 import { useEffect, useState } from 'react'
 import { useMediaQuery } from '@chakra-ui/react'
-import { useNavigate } from 'react-router-dom'
 
 function Portfolio()
 {

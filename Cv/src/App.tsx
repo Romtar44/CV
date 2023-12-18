@@ -44,7 +44,7 @@ function App()
 	return (
 		<Routes>
 			<Route path="/portfolio" element={<ProjectBox title="Portfolio mozaïque" img={Pp} techno={portfolioTechnoList} text="Premier site vitrine développer par moi même de A à Z." link="https://romaintldev.com" linkGh="https://github.com/Romtar44/CV" />} />
-			<Route path="/pong" element={<ProjectBox title="Pong vintage développer à 2" img={Pong} techno={transcendanceTechnoList} text="Jeu vidéo vintage développer en groupe. Il s'agit d'un projet de l'école 42." link="https://romaintldev.com" linkGh="https://github.com/Romtar44/transcendance" />} />
+			<Route path="/pong" element={<ProjectBox title="Pong vintage développer à 2" img={Pong} techno={transcendanceTechnoList} text="Jeu vidéo vintage développer en groupe. Il s'agit d'un projet de l'école 42." link="https://transcendance42.com" linkGh="https://github.com/Romtar44/transcendance" />} />
 			<Route path="/" element={<Portfolio />} />
 		</Routes>
 	);
