@@ -42,14 +42,14 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
 					</div>
 
 					<div className={styles.links}>
-						<a href={link}>{link} </a>
+						<a href={link} rel='external nofollow' target='_blank'>{link} </a>
 						<br></br>
-						<a href={linkGh}>{linkGh} </a>
+						<a href={linkGh} rel='external nofollow' target='_blank'>{linkGh} </a>
 					</div>
 				</div>
 
 				<div className={styles.projectContainer}>
-					<a href={link}>
+					<a href={link} rel='external nofollow' target='_blank'>
 						<Image imgSrc={img} className={styles.imgClass} alt="" border="none" w={mediumMode ? "380px" : "500px"} h="auto" />
 					</a>
 					<div className={styles.technoContainer}>
@@ -70,7 +70,7 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
 				</h2>
 
 				<div className={styles.projectContainerMobile}>
-					<a href={link}>
+					<a href={link} rel='external nofollow' target='_blank'>
 						<Image imgSrc={img} className={styles.imgClassMobile} alt="" border="none" w="100%" h="auto" />
 					</a>
 					<div className={styles.technoContainerMobile}>
@@ -85,9 +85,9 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
 				</div>
 
 				<div className={styles.linksMobile}>
-					<a href={link}>{link} </a>
+					<a href={link} rel='external nofollow' target='_blank'>{link} </a>
 					<br></br>
-					<a href={linkGh}>{linkGh} </a>
+					<a href={linkGh} rel='external nofollow' target='_blank'>{linkGh} </a>
 				</div>
 			</div>
 	)
