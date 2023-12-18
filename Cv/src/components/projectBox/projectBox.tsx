@@ -22,8 +22,7 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
 	linkGh = 'https://github.com/Romtar44'
 }) =>
 {
-	const [mobileMode, smallMode, mediumMode] = useMediaQuery([
-		'(max-width: 500px)',
+	const [smallMode, mediumMode] = useMediaQuery([
 		'(max-width: 800px)',
 		'(max-width: 1000px)'
 	])
