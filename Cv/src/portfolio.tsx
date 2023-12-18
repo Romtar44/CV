@@ -40,8 +40,6 @@ function Portfolio()
 		})
 	}, [smallMode])
 
-	console.log(document.documentElement.scrollWidth)
-
 	return (
 		<>
 			{
