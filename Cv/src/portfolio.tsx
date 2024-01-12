@@ -1,6 +1,6 @@
 import styles from './portfolio.module.scss'
 import { MainBox } from './components/mainBox/mainbox'
-import Portfolio from './assets/portfolio.png'
+import PortfolioIMG from './assets/portfolio.png'
 import Pong from './assets/miniature4(1).png'
 import { useEffect, useState } from 'react'
 import { useMediaQuery } from '@chakra-ui/react'
@@ -45,61 +45,61 @@ function Portfolio() {
 
 						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 
 						<div className={styles.longColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
 
 						</div>
 
 						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 
 						<div className={styles.longColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
 
 						</div>
 
 						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 					</div>
 				</div >
@@ -111,63 +111,63 @@ function Portfolio() {
 					<div className={styles.container}>
 
 						<div className={styles.longColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
 						</div>
 
 						<div className={styles.shortColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
+							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 						</div>
 
 						<div className={styles.longColumn + " " + styles.column} style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
-							<MainBox color='#20201e' img={Portfolio} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
+							<MainBox color='#20201e' img={PortfolioIMG} path='/portfolio' title='Mon cv' description='Site vitrine développé par moi même' />
 							<MainBox color='#2f4454' img={Pong} path='/pong' title='Pong' description="Projet de l'école 42 en duo" />
 						</div>
 					</div>
@@ -177,4 +177,4 @@ function Portfolio() {
 	)
 }
 
-export default Portfolio
+export default PortfolioIMG
