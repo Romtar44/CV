@@ -13,7 +13,7 @@ import PostgreLogo from './assets/Logo/Postgresql_Logo.svg'
 import DockerLogo from './assets/Logo/Docker_Logo.svg'
 import JWTLogo from './assets/Logo/Jwt_Logo.svg'
 import SocketIOLogo from './assets/Logo/SocketIO_Logo.svg'
-import PortfolioIMG from './assets/portfolio.png'
+import PortfolioIMG from './assets/pf.png'
 import Pong from './assets/miniature4(1).png'
 
 function App() {
