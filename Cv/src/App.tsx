@@ -13,7 +13,7 @@ import PostgreLogo from './assets/Logo/Postgresql_Logo.svg'
 import DockerLogo from './assets/Logo/Docker_Logo.svg'
 import JWTLogo from './assets/Logo/Jwt_Logo.svg'
 import SocketIOLogo from './assets/Logo/SocketIO_Logo.svg'
-import PortfolioIMG from './assets/pf.png'
+import Portefolio from './assets/rtournet.jpg'
 import Pong from './assets/miniature4(1).png'
 
 function App() {
@@ -42,7 +42,7 @@ function App() {
 
 	return (
 		<Routes>
-			<Route path="/portfolio" element={<ProjectBox title="Portfolio mozaïque" img={PortfolioIMG} techno={portfolioTechnoList} text="Premier site vitrine développer par moi même de A à Z." link="https://romaintldev.com" linkGh="https://github.com/Romtar44/CV" />} />
+			<Route path="/portfolio" element={<ProjectBox title="Portfolio mozaïque" img={Portefolio} techno={portfolioTechnoList} text="Premier site vitrine développer par moi même de A à Z." link="https://romaintldev.com" linkGh="https://github.com/Romtar44/CV" />} />
 			<Route path="/pong" element={<ProjectBox title="Pong vintage développer à 2" img={Pong} techno={transcendanceTechnoList} text="Jeu vidéo vintage développer en groupe. Il s'agit d'un projet de l'école 42." link="https://transcendance42.com" linkGh="https://github.com/Romtar44/transcendance" />} />
 			<Route path="/" element={<Portfolio />} />
 		</Routes>
