@@ -1,0 +1,100 @@
+.presentationCardContaienr {
+  height: 100px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .picsContainer {
+    width: 115px;
+    height: 115px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .pics {
+      border-radius: 8888px;
+      transition: transform 0.5s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .titleContainer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 14px;
+
+  .cvBoxContainer {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    // background-color: red;
+    // @media screen and (max-width: 500px) {
+    //   width: 100%;
+    // }
+
+    h1 {
+      font-family: "PoppinsTitle";
+      font-size: 22px;
+    }
+    h2,
+    h3 {
+      font-size: 14px;
+      line-height: 1.2;
+      font-family: "Poppins";
+    }
+    p,
+    i {
+      font-family: "Poppins";
+      line-height: 21px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.64);
+    }
+    a {
+      font-family: "Poppins";
+      line-height: 21px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.sectionContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experienceContainer{
+  display: flex;
+  width: 100%;
+  word-wrap: break-word;
+
+  gap: 25px;
+  padding-top: 5px;
+
+  .periodContainer {
+    width: 25%;
+  }
+  .experienceDescription {
+    width: 75%;
+  }
+}
+
+
