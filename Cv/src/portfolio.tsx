@@ -82,7 +82,7 @@ function Portfolio() {
                 color="grey"
                 img={climsolu}
                 path="/climsolu"
-                title="Site vitrine"
+                title="ClimSolution"
                 description="Site vitrine avec CMS"
               />
               <MainBox
@@ -130,7 +130,7 @@ function Portfolio() {
                 color="grey"
                 img={climsolu}
                 path="/climsolu"
-                title="Site vitrine"
+                title="ClimSolution"
                 description="Site vitrine avec CMS"
               />
               <MainBox
@@ -158,7 +158,7 @@ function Portfolio() {
                 color="grey"
                 img={climsolu}
                 path="/climsolu"
-                title="Site vitrine"
+                title="ClimSolution"
                 description="Site vitrine avec CMS"
               />
               <MainBox
@@ -192,7 +192,7 @@ function Portfolio() {
                 color="grey"
                 img={climsolu}
                 path="/climsolu"
-                title="Site vitrine"
+                title="ClimSolution"
                 description="Site vitrine avec CMS"
               />
               <MainBox
@@ -227,7 +227,7 @@ function Portfolio() {
                 color="grey"
                 img={climsolu}
                 path="/climsolu"
-                title="Site vitrine"
+                title="ClimSolution"
                 description="Site vitrine avec CMS"
               />
               <MainBox
@@ -268,7 +268,7 @@ function Portfolio() {
                 color="grey"
                 img={climsolu}
                 path="/climsolu"
-                title="Site vitrine"
+                title="ClimSolution"
                 description="Site vitrine avec CMS"
               />
               <MainBox
@@ -310,7 +310,7 @@ function Portfolio() {
                 color="grey"
                 img={climsolu}
                 path="/climsolu"
-                title="Site vitrine"
+                title="ClimSolution"
                 description="Site vitrine avec CMS"
               />
             </div>
@@ -352,7 +352,7 @@ function Portfolio() {
                 color="grey"
                 img={climsolu}
                 path="/climsolu"
-                title="Site vitrine"
+                title="ClimSolution"
                 description="Site vitrine avec CMS"
               />
               <MainBox
@@ -366,7 +366,7 @@ function Portfolio() {
                 color="grey"
                 img={climsolu}
                 path="/climsolu"
-                title="Site vitrine"
+                title="ClimSolution"
                 description="Site vitrine avec CMS"
               />
               <MainBox

@@ -2,7 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import Portfolio from "./portfolio";
 import ProjectBox from "./components/projectBox/projectBox";
 import { TechnoBox } from "./components/technoBox/technoBox";
-import ViteLogo from "./assets/Logo/Vite_logo.svg";
+import ViteLogo from "./assets/Logo/Vite_Logo.svg";
+import NextLogo from "./assets/Logo/Next_Logo.svg";
+
 import ReactLogo from "./assets/Logo/React_Logo.svg";
 import HtmlLogo from "./assets/Logo/HTML5_Logo.svg";
 import ScssLogo from "./assets/Logo/Sass_Logo.svg";
@@ -49,6 +51,39 @@ function App() {
       logo={ViteLogo}
       techName="Vite"
       link="https://vitejs.dev/"
+    />,
+  ];
+
+  const climsoluTechnoList = [
+    <TechnoBox
+      title="React"
+      logo={ReactLogo}
+      techName="React"
+      link="https://fr.legacy.reactjs.org/"
+    />,
+    <TechnoBox
+      title="TypeScript"
+      logo={TSLogo}
+      techName="TypeScript"
+      link="https://www.typescriptlang.org/"
+    />,
+    <TechnoBox
+      title="HTML5"
+      logo={HtmlLogo}
+      techName="Html"
+      link="https://developer.mozilla.org/fr/docs/Web/HTML"
+    />,
+    <TechnoBox
+      title="Scss"
+      logo={ScssLogo}
+      techName="Scss"
+      link="https://sass-lang.com/"
+    />,
+    <TechnoBox
+      title="Next"
+      logo={NextLogo}
+      techName="Next.js"
+      link="https://nextjs.org/"
     />,
   ];
 
@@ -147,19 +182,15 @@ function App() {
         path="/climsolu"
         element={
           <ProjectBox
-            title="Pong vintage développer à 2"
+            title="ClimSolution"
             img={climsolu}
-            techno={transcendanceTechnoList}
-            text="Jeu vidéo vintage développer en groupe. Il s'agit d'un projet de l'école 42."
-            link="https://transcendance42.com"
-            linkGh="https://github.com/Romtar44/transcendance"
+            techno={climsoluTechnoList}
+            text="Site vitrine pour une entreprise parisienne de BTP"
+            link="clim-solution.vercel.app"
           />
         }
       />
-      <Route
-        path="/cv"
-        element={<CvBox title="Pong vintage développer à 2" />}
-      />
+      <Route path="/cv" element={<CvBox title="Mon cv" />} />
       <Route path="/" element={<Portfolio />} />
     </Routes>
   );
