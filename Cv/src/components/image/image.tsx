@@ -27,4 +27,4 @@ export const MyImage = ({
   );
 };
 
-export default Image;
+export default MyImage;

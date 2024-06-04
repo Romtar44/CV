@@ -1,4 +1,4 @@
-import React, { Component, ReactNode, ErrorInfo } from 'react';
+import React, { Component, ReactNode, ErrorInfo } from "react";
 
 interface ErrorBoundaryProps {
   children: ReactNode;
@@ -19,13 +19,16 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
-    console.error('ErrorBoundary caught an error:', error, errorInfo);
+    console.error("ErrorBoundary caught an error:", error, errorInfo);
   }
 
   render(): ReactNode {
-    console.log('coucou')
     if (this.state.hasError) {
-      return <div style={{ backgroundColor: 'blue', width: '100%', height: '100%' }}>Image non disponible</div>;
+      return (
+        <div style={{ backgroundColor: "blue", width: "100%", height: "100%" }}>
+          Image non disponible
+        </div>
+      );
     }
 
     return this.props.children;
