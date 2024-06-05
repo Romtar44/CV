@@ -68,7 +68,10 @@ type LinkContainerProps = {
 const LinkContainer: React.FC<LinkContainerProps> = ({ link, name }) => {
   return (
     <div className={styles.experienceContainer}>
-      <p style={{ color: "white" }} className={styles.periodContainer}>
+      <p
+        style={{ color: "rgba(255, 255, 255, 0.9)" }}
+        className={styles.periodContainer}
+      >
         {name}{" "}
       </p>
       <a

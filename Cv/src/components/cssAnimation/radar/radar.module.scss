@@ -1,0 +1,194 @@
+
+// .section {
+//   position: relative;
+//   width: 100%;
+//   height: 1098px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: black;
+// }
+
+.bg {
+  position: relative;
+  width: 1442px;
+  height: 1098px;
+  background-color: #120621;
+}
+
+.container {
+  position: relative;
+  width: 1442px;
+  height: 1098px;
+  clip-path: polygon(
+    721px 0px,
+    1442px 482px,
+    1442px 1098px,
+    0px 1098px,
+    0px 482px
+  );
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-image: url("./Radar_section.svg");
+  background-size: none;
+  z-index: 5;
+
+}
+
+.logo {
+  z-index: 15;
+  position: absolute;
+  width: 179px;
+  height: 188px;
+  background-image: url("./cube.svg");
+}
+
+.logoPos1 {
+  opacity: 100%;
+  top: 34.1%;
+  left: 75%;
+  translate: -50% -50%;
+  animation: logo1 11s infinite linear;
+}
+
+.logoPos2 {
+  opacity: 0%;
+  top: 45%;
+  left: 25%;
+  translate: -50% -50%;
+  animation: logo2 11s infinite linear;
+}
+
+.radar {
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  width: 256px;
+  height: 220px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  transform: rotate(90deg);
+  top: 34.1%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.radarLight {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+
+  width: 256px;
+  height: 256px;
+
+  border-radius: 100%;
+  clip-path: polygon(0% 0%, 50% 50%, 0% 50%, 0% 100%, 100% 100%, 100% 0%);
+
+  background: conic-gradient(
+    from 270deg,
+    rgba(121, 63, 243, 0) 10%,
+    rgba(121, 63, 243, 0.5) 80%,
+    rgba(121, 63, 243, 1) 100%
+  );
+  animation: rotation 11s infinite linear;
+}
+
+.radar2 {
+  z-index: 1;
+  width: 256px;
+  height: 220px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 34.1%;
+  left: 50%;
+  translate: calc(-50% - 1px) -50%;
+}
+
+.radarLight2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+
+  width: 2000px;
+  height: 2000px;
+
+  border-radius: 100%;
+  clip-path: polygon(0% 0%, 50% 50%, 0% 50%, 0% 100%, 100% 100%, 100% 0%);
+
+  /* background: conic-gradient(
+    from -90deg,
+    rgba(121, 63, 243, 0.05) 0%,
+     rgba(121, 63, 243, 0.1) 35%,
+      rgba(121, 63, 243, 0) 90%
+  ); */
+
+  background: conic-gradient(
+    from 270deg,
+    rgba(121, 63, 243, 0) 10%,
+    rgba(121, 63, 243, 0.05) 100%
+  );
+  animation: rotation 11s infinite linear;
+}
+
+@keyframes logo2 {
+  0% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 0%;
+  }
+
+  85% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes logo1 {
+  0% {
+    opacity: 0%;
+  }
+
+  25% {
+    opacity: 100%;
+  }
+
+  49% {
+    opacity: 60%;
+  }
+
+  60% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    opacity: 0.1;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  85% {
+    opacity: 1;
+    transform: rotate(350deg);
+  }
+
+  100% {
+    opacity: 0.1;
+    transform: rotate(360deg);
+  }
+}

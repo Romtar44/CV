@@ -19,6 +19,7 @@ import Portefolio from "./assets/rtournet.jpg";
 import Pong from "./assets/miniature4(1).png";
 import { CvBox } from "./components/cvBox/cvBox";
 import climsolu from "./assets/climsolu.png";
+import { AnimationBox } from "./components/cssAnimation/animationBox";
 
 function App() {
   const portfolioTechnoList = [
@@ -186,8 +187,14 @@ function App() {
             img={climsolu}
             techno={climsoluTechnoList}
             text="Site vitrine pour une entreprise parisienne de BTP"
-            link="clim-solution.vercel.app"
+            link="https://clim-solution.vercel.app"
           />
+        }
+      />
+      <Route
+        path="/animation"
+        element={
+          <AnimationBox />
         }
       />
       <Route path="/cv" element={<CvBox title="Mon cv" />} />
