@@ -1,11 +1,11 @@
 import styles from "./portfolio.module.scss";
 import { MainBox } from "./components/mainBox/mainbox";
-import PortfolioIMG from "./assets/pf.png";
 import Pong from "./assets/miniature4(1).png";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "@chakra-ui/react";
 import pics from "./assets/rtournet.jpg";
 import climsolu from "./assets/climsolu.png";
+import animation from "./assets/animation.png";
 
 function Portfolio() {
   const [offsetY, setOffsetY] = useState(0);
@@ -65,11 +65,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -86,11 +86,11 @@ function Portfolio() {
                 description="Site vitrine avec CMS"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#20201e"
@@ -107,11 +107,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
             </div>
 
@@ -120,11 +120,11 @@ function Portfolio() {
               style={{ transform: `translateY(${offsetY * 0.5}px)` }}
             >
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="grey"
@@ -148,11 +148,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="grey"
@@ -162,18 +162,18 @@ function Portfolio() {
                 description="Site vitrine avec CMS"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -210,11 +210,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#20201e"
@@ -238,11 +238,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
             </div>
 
@@ -251,18 +251,18 @@ function Portfolio() {
               style={{ transform: `translateY(${offsetY * 0.5}px)` }}
             >
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="grey"
@@ -279,11 +279,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#20201e"
@@ -300,11 +300,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="grey"
@@ -342,11 +342,11 @@ function Portfolio() {
                 description="Mes expériences en développement"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="grey"
@@ -370,11 +370,11 @@ function Portfolio() {
                 description="Site vitrine avec CMS"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
             </div>
           </div>
@@ -388,11 +388,11 @@ function Portfolio() {
               style={{ transform: `translateY(${offsetY * 0.5}px)` }}
             >
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -402,11 +402,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -416,32 +416,18 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
-              />
-              <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -451,11 +437,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -465,11 +451,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -479,18 +465,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
-              />
-              <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -500,11 +479,32 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
+              />
+              <MainBox
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
+              />
+              <MainBox
+                color="#2f4454"
+                img={Pong}
+                path="/pong"
+                title="Pong"
+                description="Projet de l'école 42 en duo"
+              />
+              <MainBox
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -527,11 +527,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -541,74 +541,18 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
-              />
-              <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
-              />
-              <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
-              />
-              <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
-              />
-              <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -625,11 +569,67 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
+              />
+              <MainBox
+                color="#2f4454"
+                img={Pong}
+                path="/pong"
+                title="Pong"
+                description="Projet de l'école 42 en duo"
+              />
+              <MainBox
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
+              />
+              <MainBox
+                color="#2f4454"
+                img={Pong}
+                path="/pong"
+                title="Pong"
+                description="Projet de l'école 42 en duo"
+              />
+              <MainBox
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
+              />
+              <MainBox
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
+              />
+              <MainBox
+                color="#2f4454"
+                img={Pong}
+                path="/pong"
+                title="Pong"
+                description="Projet de l'école 42 en duo"
+              />
+              <MainBox
+                color="#2f4454"
+                img={Pong}
+                path="/pong"
+                title="Pong"
+                description="Projet de l'école 42 en duo"
+              />
+              <MainBox
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
             </div>
 
@@ -638,11 +638,11 @@ function Portfolio() {
               style={{ transform: `translateY(${offsetY * 0.5}px)` }}
             >
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -652,11 +652,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -666,32 +666,18 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
-              />
-              <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -701,11 +687,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -715,11 +701,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -729,18 +715,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
-              />
-              <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
@@ -750,11 +729,32 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#20201e"
-                img={PortfolioIMG}
-                path="/portfolio"
-                title="Mon portfolio"
-                description="Site vitrine développé par moi même"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
+              />
+              <MainBox
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
+              />
+              <MainBox
+                color="#2f4454"
+                img={Pong}
+                path="/pong"
+                title="Pong"
+                description="Projet de l'école 42 en duo"
+              />
+              <MainBox
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
               />
               <MainBox
                 color="#2f4454"
