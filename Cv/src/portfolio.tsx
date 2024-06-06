@@ -79,11 +79,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="grey"
-                img={climsolu}
-                path="/climsolu"
-                title="ClimSolution"
-                description="Site vitrine avec CMS"
+                color="#20201e"
+                img={pics}
+                path="/cv"
+                title="CV"
+                description="Mes expériences en développement"
               />
               <MainBox
                 color="#180a2e"
@@ -402,11 +402,32 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
+                color="#20201e"
+                img={pics}
+                path="/cv"
+                title="CV"
+                description="Mes expériences en développement"
+              />
+              <MainBox
+                color="grey"
+                img={climsolu}
+                path="/climsolu"
+                title="ClimSolution"
+                description="Site vitrine avec CMS"
+              />
+              <MainBox
                 color="#180a2e"
                 img={animation}
                 path="/animation"
                 title="Animations"
                 description="Quelques animations que j'ai développer"
+              />
+              <MainBox
+                color="#20201e"
+                img={pics}
+                path="/cv"
+                title="CV"
+                description="Mes expériences en développement"
               />
               <MainBox
                 color="#2f4454"
@@ -416,81 +437,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
-              />
-              <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
-              />
-              <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
-              />
-              <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
-              />
-              <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
-              />
-              <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
-              />
-              <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
+                color="grey"
+                img={climsolu}
+                path="/climsolu"
+                title="ClimSolution"
+                description="Site vitrine avec CMS"
               />
               <MainBox
                 color="#2f4454"
@@ -512,6 +463,55 @@ function Portfolio() {
                 path="/pong"
                 title="Pong"
                 description="Projet de l'école 42 en duo"
+              />
+              <MainBox
+                color="#20201e"
+                img={pics}
+                path="/cv"
+                title="CV"
+                description="Mes expériences en développement"
+              />
+              <MainBox
+                color="#2f4454"
+                img={Pong}
+                path="/pong"
+                title="Pong"
+                description="Projet de l'école 42 en duo"
+              />
+              <MainBox
+                color="grey"
+                img={climsolu}
+                path="/climsolu"
+                title="ClimSolution"
+                description="Site vitrine avec CMS"
+              />
+              <MainBox
+                color="#20201e"
+                img={pics}
+                path="/cv"
+                title="CV"
+                description="Mes expériences en développement"
+              />
+              <MainBox
+                color="#2f4454"
+                img={Pong}
+                path="/pong"
+                title="Pong"
+                description="Projet de l'école 42 en duo"
+              />
+              <MainBox
+                color="#20201e"
+                img={pics}
+                path="/cv"
+                title="CV"
+                description="Mes expériences en développement"
+              />
+              <MainBox
+                color="grey"
+                img={climsolu}
+                path="/climsolu"
+                title="ClimSolution"
+                description="Site vitrine avec CMS"
               />
             </div>
 
@@ -520,6 +520,62 @@ function Portfolio() {
               style={{ transform: `translateY(${offsetY * 0.2}px)` }}
             >
               <MainBox
+                color="#20201e"
+                img={pics}
+                path="/cv"
+                title="CV"
+                description="Mes expériences en développement"
+              />
+              <MainBox
+                color="grey"
+                img={climsolu}
+                path="/climsolu"
+                title="ClimSolution"
+                description="Site vitrine avec CMS"
+              />
+              <MainBox
+                color="#2f4454"
+                img={Pong}
+                path="/pong"
+                title="Pong"
+                description="Projet de l'école 42 en duo"
+              />
+              <MainBox
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
+              />
+              <MainBox
+                color="grey"
+                img={climsolu}
+                path="/climsolu"
+                title="ClimSolution"
+                description="Site vitrine avec CMS"
+              />
+              <MainBox
+                color="#2f4454"
+                img={Pong}
+                path="/pong"
+                title="Pong"
+                description="Projet de l'école 42 en duo"
+              />
+              <MainBox
+                color="grey"
+                img={climsolu}
+                path="/climsolu"
+                title="ClimSolution"
+                description="Site vitrine avec CMS"
+              />
+              <MainBox
+                color="#20201e"
+                img={pics}
+                path="/cv"
+                title="CV"
+                description="Mes expériences en développement"
+              />
+              <MainBox
                 color="#2f4454"
                 img={Pong}
                 path="/pong"
@@ -541,11 +597,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
+                color="#20201e"
+                img={pics}
+                path="/cv"
+                title="CV"
+                description="Mes expériences en développement"
               />
               <MainBox
                 color="#180a2e"
@@ -555,74 +611,18 @@ function Portfolio() {
                 description="Quelques animations que j'ai développer"
               />
               <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
+                color="grey"
+                img={climsolu}
+                path="/climsolu"
+                title="ClimSolution"
+                description="Site vitrine avec CMS"
               />
               <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
-              />
-              <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
-              />
-              <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
-              />
-              <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
-              />
-              <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
+                color="#20201e"
+                img={pics}
+                path="/cv"
+                title="CV"
+                description="Mes expériences en développement"
               />
               <MainBox
                 color="#180a2e"
@@ -645,11 +645,11 @@ function Portfolio() {
                 description="Quelques animations que j'ai développer"
               />
               <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
+                color="grey"
+                img={climsolu}
+                path="/climsolu"
+                title="ClimSolution"
+                description="Site vitrine avec CMS"
               />
               <MainBox
                 color="#180a2e"
@@ -666,11 +666,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
+                color="#20201e"
+                img={pics}
+                path="/cv"
+                title="CV"
+                description="Mes expériences en développement"
               />
               <MainBox
                 color="#180a2e"
@@ -687,11 +687,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
+                color="grey"
+                img={climsolu}
+                path="/climsolu"
+                title="ClimSolution"
+                description="Site vitrine avec CMS"
               />
               <MainBox
                 color="#2f4454"
@@ -701,11 +701,11 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
+                color="#20201e"
+                img={pics}
+                path="/cv"
+                title="CV"
+                description="Mes expériences en développement"
               />
               <MainBox
                 color="#2f4454"
@@ -715,25 +715,18 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
+                color="grey"
+                img={climsolu}
+                path="/climsolu"
+                title="ClimSolution"
+                description="Site vitrine avec CMS"
               />
               <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
-              />
-              <MainBox
-                color="#180a2e"
-                img={animation}
-                path="/animation"
-                title="Animations"
-                description="Quelques animations que j'ai développer"
+                color="#20201e"
+                img={pics}
+                path="/cv"
+                title="CV"
+                description="Mes expériences en développement"
               />
               <MainBox
                 color="#180a2e"
@@ -743,11 +736,18 @@ function Portfolio() {
                 description="Quelques animations que j'ai développer"
               />
               <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
+                color="#180a2e"
+                img={animation}
+                path="/animation"
+                title="Animations"
+                description="Quelques animations que j'ai développer"
+              />
+              <MainBox
+                color="grey"
+                img={climsolu}
+                path="/climsolu"
+                title="ClimSolution"
+                description="Site vitrine avec CMS"
               />
               <MainBox
                 color="#180a2e"
@@ -757,11 +757,11 @@ function Portfolio() {
                 description="Quelques animations que j'ai développer"
               />
               <MainBox
-                color="#2f4454"
-                img={Pong}
-                path="/pong"
-                title="Pong"
-                description="Projet de l'école 42 en duo"
+                color="#20201e"
+                img={pics}
+                path="/cv"
+                title="CV"
+                description="Mes expériences en développement"
               />
             </div>
           </div>
