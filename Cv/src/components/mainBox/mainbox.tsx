@@ -33,6 +33,7 @@ type MainBoxProps = {
   color?: string;
   img: string;
   path: string;
+  marqueeColor?: string;
 };
 
 export const MainBox: React.FC<MainBoxProps> = ({
@@ -41,6 +42,7 @@ export const MainBox: React.FC<MainBoxProps> = ({
   color = "black",
   img,
   path = "/",
+  marqueeColor = "white",
 }) => {
   const [mobileMode] = useMediaQuery("(max-width: 800px)");
   const navig = useNavigate();
@@ -50,6 +52,10 @@ export const MainBox: React.FC<MainBoxProps> = ({
       className={styles.container}
       onClick={() => {
         navig(path);
+        window.scroll({
+          top: 0,
+          behavior: "instant",
+        });
       }}
     >
       <div className={styles.boxContainer}>
@@ -62,7 +68,7 @@ export const MainBox: React.FC<MainBoxProps> = ({
           h="100%"
         />
         <div className={styles.marquee}>
-          <Marquee text="En savoir plus" />
+          <Marquee text="En savoir plus" color={marqueeColor} />
         </div>
         {mobileMode ? (
           <div>

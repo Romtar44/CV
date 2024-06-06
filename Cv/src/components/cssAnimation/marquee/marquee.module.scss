@@ -1,9 +1,10 @@
 .logos {
   position: relative;
   overflow: hidden;
-  padding: 60px 0;
+  padding: 20px 0;
   white-space: nowrap;
-  width: 1600px;
+  width: 80vw;
+  max-width: 600px;
   background-color: white;
 }
 
@@ -31,11 +32,7 @@
 }
 
 .logos::after {
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    rgb(0, 0, 0)
-  );
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0));
   right: 0;
 }
 
@@ -49,9 +46,9 @@
 }
 
 .logoSlide img {
-  height: 2.5rem;
+  height: 50px;
   width: 8rem;
-  margin: 0 4rem;
+  margin: 0 1rem;
 }
 
 @keyframes marquee {

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useMediaQuery } from "@chakra-ui/react";
 import pics from "./assets/rtournet.jpg";
 import climsolu from "./assets/climsolu.png";
-import animation from "./assets/animation.png";
+import animation from "./assets/animation.webp";
 
 function Portfolio() {
   const [offsetY, setOffsetY] = useState(0);
@@ -79,6 +79,13 @@ function Portfolio() {
                 description="Projet de l'école 42 en duo"
               />
               <MainBox
+                color="grey"
+                img={climsolu}
+                path="/climsolu"
+                title="ClimSolution"
+                description="Site vitrine avec CMS"
+              />
+              <MainBox
                 color="#20201e"
                 img={pics}
                 path="/cv"
@@ -91,13 +98,6 @@ function Portfolio() {
                 path="/animation"
                 title="Animations"
                 description="Quelques animations que j'ai développer"
-              />
-              <MainBox
-                color="#20201e"
-                img={pics}
-                path="/cv"
-                title="CV"
-                description="Mes expériences en développement"
               />
               <MainBox
                 color="#2f4454"

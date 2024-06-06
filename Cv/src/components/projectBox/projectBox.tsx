@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./projectBox.module.scss";
 import { MyImage } from "../image/image";
 import { useMediaQuery } from "@chakra-ui/react";
+import BackButton from "../backButton/backButton";
 
 type ProjectBoxProps = {
   title: string;
@@ -27,6 +28,7 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
 
   return !smallMode ? (
     <div className={styles.container}>
+      <BackButton top="1%" left="1%" />
       <div className={styles.textContainer}>
         <h2 className={styles.mainTitle}>{title}</h2>
 
@@ -63,6 +65,7 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
     </div>
   ) : (
     <div className={styles.containerMobile}>
+      <BackButton />
       <h2 className={styles.mainTitleMobile}>{title}</h2>
 
       <div className={styles.projectContainerMobile}>

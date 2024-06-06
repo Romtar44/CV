@@ -6,11 +6,11 @@
   align-items: center;
   justify-content: center;
   gap: 80px;
+  height: fit-content;
 
   h1 {
     font-size: 40px;
     font-family: "PoppinsTitle";
-    padding: 20px 50px 50px 50px;
     text-align: center;
   }
 
@@ -83,10 +83,45 @@
   }
 
   .radarSize {
-    height: 420px;
+    height: 500px;
   }
 
   .marqueeSize {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    .animationWrapper {
+      .animationContainer {
+
+        transform: scale(0.20);
+      }
+    }
+  }
+  .floatingSize {
+    height: 400px;
+  }
+
+  .radarSize {
     height: 350px;
+  }
+
+  .marqueeSize {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .wrapper {
+    .animationWrapper {
+      .animationContainer {
+
+        transform: scale(0.14);
+      }
+    }
+  }
+  .radarSize {
+    height: 400px;
   }
 }

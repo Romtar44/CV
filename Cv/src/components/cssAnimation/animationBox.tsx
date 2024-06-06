@@ -1,3 +1,4 @@
+import BackButton from "../backButton/backButton";
 import styles from "./animationBox.module.scss";
 import Floating from "./floating/floating";
 import { DoubleMarquee } from "./marquee/marquee";
@@ -6,6 +7,7 @@ import Radar from "./radar/radar";
 export const AnimationBox = () => {
   return (
     <div className={styles.wrapper}>
+      <BackButton top="calc(5% - 50px)" />
       <h1>Banque d'animation</h1>
 
       <div className={`${styles.animationWrapper} ${styles.floatingSize}`}>
@@ -31,7 +33,7 @@ export const AnimationBox = () => {
           Animation réalisée en pure CSS, puis adapté pour fonctionner dans un
           enviromment React/Scss
         </p>
-        <div className={styles.animationContainer}>
+        <div className="">
           <DoubleMarquee />
         </div>
       </div>

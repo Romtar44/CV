@@ -6,6 +6,7 @@ type ImageProps = {
   w?: string;
   h?: string;
   border?: string;
+  borderRadius?: string;
   className?: string;
 };
 
@@ -15,12 +16,18 @@ export const MyImage = ({
   w = "100%",
   h = "100%",
   border = "1px solid black",
+  borderRadius,
   className,
 }: ImageProps) => {
   return (
     <div
       className={`${styles.imgContainer} ${className}`}
-      style={{ width: w, height: h, border: border }}
+      style={{
+        width: w,
+        height: h,
+        border: border,
+        borderRadius: borderRadius,
+      }}
     >
       <img src={imgSrc} alt={alt} />
     </div>

@@ -1,4 +1,5 @@
 import pics from "../../assets/rtournet.jpg";
+import BackButton from "../backButton/backButton";
 import MyImage from "../image/image";
 import styles from "./cvBox.module.scss";
 
@@ -90,6 +91,7 @@ export const CvBox: React.FC<CvBoxProps> = ({ title }) => {
   title;
   return (
     <div className={styles.wrapper}>
+      <BackButton />
       <div className={styles.cvBoxContainer}>
         <PresentationCard />
         <div className={styles.sectionContainer}>

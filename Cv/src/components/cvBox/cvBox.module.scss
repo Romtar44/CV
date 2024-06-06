@@ -32,6 +32,7 @@
 }
 
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,7 +82,7 @@
   gap: 10px;
 }
 
-.experienceContainer{
+.experienceContainer {
   display: flex;
   width: 100%;
   word-wrap: break-word;
@@ -96,5 +97,3 @@
     width: 75%;
   }
 }
-
-
