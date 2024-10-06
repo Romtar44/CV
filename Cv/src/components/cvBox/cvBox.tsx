@@ -105,9 +105,17 @@ export const CvBox: React.FC<CvBoxProps> = ({ title }) => {
         <div className={styles.sectionContainer}>
           <h2>Expérience</h2>
           <ExperienceCard
+            title="Développeur web Fullstack"
+            description="Développement d'un ERP pour pisciniste"
+            period="jui 2024 - ~"
+            link={["https://backend.lebin-solutions.com/"]}
+            linkDescription="Lebin Solutions"
+            displayNumber
+          />
+          <ExperienceCard
             title="Développeur web Fullstack junior freelance"
             description="Réalisation de site web"
-            period="2024 - ~"
+            period="nov 2023 - jui 2024"
             link={["https://clim-solution.vercel.app/"]}
             linkDescription="Exemple de site"
             displayNumber
@@ -123,11 +131,11 @@ export const CvBox: React.FC<CvBoxProps> = ({ title }) => {
         <div className={styles.sectionContainer}>
           <h2>Projet annexe</h2>
           <ExperienceCard
-            title="Jeu mobile secret"
-            description="Développement entre ami d'un jeu mobile... révolutionnaire ?"
+            title="Réseau social"
+            description="Développement d'un réseau social atypique"
             period="En cours"
             link={["https://fr.wikipedia.org/wiki/Secret"]}
-            linkDescription="Le jeu mobile le plus attendu du siècle"
+            linkDescription="Le réseau social pour aider ceux qui en ont besoin"
           />
         </div>
         <div className={styles.sectionContainer}>
